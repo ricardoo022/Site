@@ -11,7 +11,9 @@ html, body {
     padding: 10px 20px;
     background-color: #fff;
     border-bottom: 1px solid #ddd;
+    
 }
+
 
 .logo {
     display: flex;
@@ -46,6 +48,45 @@ html, body {
     color: #d8a85c; 
 }
 
+.dropdown .dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 3px 0;
+    margin: 0;
+    z-index: 1000;
+    width: 300px; /* Adjust the width of the dropdown menu */
+}
+
+.dropdown .dropdown-menu li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown .dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+.dropdown .dropdown-menu a {
+    padding: 10px 20px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown .dropdown-menu a:hover {
+    color: #d8a85c;
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 .reservas {
     background-color: black;
     color: white !important;
@@ -60,26 +101,32 @@ html, body {
 }
 
 .contactsdiv{
-    margin: 0;
-    padding: 20px;
-    background-color: #eedfdf;
+    
+    display: flex;
+    align-items: center; /* Center the list items */
+    justify-content: flex-start; /* Center the content vertically (if height is defined) */
+    height: 30px;
+    color: #333;
+    background-color: #eee9e9;
     
 }
 
 .contacts{
-    list-style: none;
-    display: flex; /*flex é para as coisas ficaram ao lado das outras*/
-    margin: 0;
-    padding: 0;
-
+    list-style: none; /* Removes the bullet points from the list */
+    padding: 0; /* Remove default padding from the list */
+    margin: 15px; /* Remove default margin from the list */
+    display: flex;
 }
 .contacts li{
-    margin: 0 35px;
-    transition: #88380a 0.3s ease;
+    transition:0.3s ease;
+    font-size: 16px; /* Adjust the font size */
+    margin-bottom: 10px;
+    margin: 40px;
+
 }
 
 .contacts :hover {
-    color: #d8a85c; 
+    color: #f0ca8c; 
 }
 
 
@@ -105,15 +152,21 @@ html, body {
 .texto{
     margin: 100px;
     text-align: center;
-    font-family: Montserrat;
+    font-family:'Playfair Display', serif;
 
 }
 .titulo{
-    
-    font-size: 29px;
-    font-weight: bold;
-    font-family: Montserrat;
-    
+
+    font-size: 36px; /* Tamanho da fonte maior para destaque */
+    font-weight: bold; /* Deixa o título mais evidente */
+    color: #333; /* Cor do título */
+    text-align: center; /* Centraliza o título na página */
+    text-transform: uppercase; /* Coloca o texto em letras maiúsculas */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    letter-spacing: 1px; /* Aumenta o espaçamento entre as letras */
+    border-bottom: 2px solid #f0a500; /* Adiciona uma linha abaixo do título para separação visual */
+    padding-bottom: 10px; /* Espaçamento interno no título */
+
 }
 
 .parte1 {
@@ -135,13 +188,16 @@ html, body {
 }
 
 .texto1{
-    margin-left: 50px;
-    font-family: Montserrat;
-    font-size: 17px;
+    margin-left: 40px;
+    font-family:'Playfair Display', serif;
+
+    font-size: 18px;
     text-align: justify;
     line-height: 2;
     letter-spacing: 1.5px;
     text-overflow: ellipsis;
+    color: #333;
+    padding: 40px;
 
 }
 
@@ -152,12 +208,13 @@ html, body {
     gap: 20px;/* Espaço entre a imagem e o texto */
     margin: 60px;
     justify-content: space-between;
+    font-family:'Playfair Display', serif;
 }
                      
 
 .parte2 img {
-    margin-top: 120px;
-    max-width: 40%; /* Ajuste o tamanho da imagem conforme necessário */
+    margin-top: 40px;
+    max-width: 45%; /* Ajuste o tamanho da imagem conforme necessário */
     height: auto; /* Mantém a proporção da imagem */
 }
 
@@ -167,18 +224,239 @@ html, body {
 }
 
 .texto2{
-    margin-top: 120px;
-    margin-left: 50px;
+    margin-top: 40px;
+    margin-right: 50px;
     font-family: Montserrat;
-    font-size: 17px;
+    font-size: 18px;
     text-align: justify;
     line-height: 2;
     letter-spacing: 1.5px;
     text-overflow: ellipsis;
+    padding: 20px;
 
 }
-p::first-letter{
-    font-size: 200%;
-    color: rgb(18, 18, 18);
+.texto1 p::first-letter{
+    font-size: 3em;
+    float: left;
+    margin-right: 10px;
+    color: #010101;
     
 }
+
+.texto2 p::first-letter{
+    font-size: 3em;
+    float: left;
+    margin-right: 10px;
+    color: #010101;
+    
+}
+
+.container {
+    display: flex; /* Alinha as imagens em uma linha, lado a lado */
+    justify-content: space-around; /* Espaça as imagens uniformemente */
+    margin-bottom: 20px; /* Espaçamento entre os contêineres */
+    
+}
+
+.image-container {
+    position: relative;
+    width: 40%;
+    margin: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    display: block;
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover;
+}
+
+.text-overlay {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%; /* Alinha verticalmente no centro */
+    left: 0%; /* Alinha horizontalmente no centro */
+    align-items: center;
+    color: white; /* Cor do texto */
+    font-size: 24px; /* Tamanho do texto */
+    font-weight: bold; /* Negrito */
+    font-family: Montserrat;
+    text-shadow: 0 0 8px rgba(252, 252, 252, 0.8);
+    text-align:center; /* Centraliza o texto */
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo preto semitransparente */
+    padding: 10px 20px; /* Espaçamento interno para o texto */
+    border-radius: 5px; /* Bordas arredondadas no fundo do texto */
+    opacity: 0;
+    transition:.0,6s;
+}
+
+.image-container:hover .text-overlay {
+    opacity: 1; /* Torna o texto visível ao passar o mouse */
+    
+}
+
+.container-c{
+    width: 85%; /* Garante que a imagem ocupe toda a largura */
+    margin-top: 30px; /* Espaçamento entre esta imagem e o bloco de cima */
+    position: relative;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+.container-c img {
+    width: 100%; /* Imagem ocupa toda a largura */
+    height: 300px; /* Mantém a proporção da imagem */
+    display: block;
+}
+
+.text-overlay-c{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%; /* Alinha verticalmente no centro */
+    left: 0%; /* Alinha horizontalmente no centro */
+    align-items: center;
+    color: white; /* Cor do texto */
+    font-size: 24px; /* Tamanho do texto */
+    font-weight: bold; /* Negrito */
+    font-family: Montserrat;
+    text-shadow: 0 0 8px rgba(252, 252, 252, 0.8);
+    text-align:center; /* Centraliza o texto */
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo preto semitransparente */
+    padding: 10px 20px; /* Espaçamento interno para o texto */
+    border-radius: 5px; /* Bordas arredondadas no fundo do texto */
+    opacity: 0;
+    transition:.0,6s;
+
+}
+
+.container-c:hover .text-overlay-c {
+    opacity: 1; /* Torna o texto visível ao passar o mouse */
+    
+}
+
+
+
+.local{
+    width: 85%; /* Garante que a imagem ocupe toda a largura */
+    height: 400px;
+    margin-top: 30px; /* Espaçamento entre esta imagem e o bloco de cima */
+    position: relative;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+footer {
+    background-color: #f4f3f3bb;
+    color: #333;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 30px;
+}
+  
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+  
+.contact-section, .follow-section {
+    width: 30%;
+    
+}
+  
+.contact-section h3, .follow-section h3 {
+    font-size: 2;
+    margin-bottom: 10px;
+    font-weight: 500;
+    text-align: start;
+}
+
+.contact-section p{
+    margin: 0 10px;
+    font-size: 18px;
+    text-align: start;
+
+}
+  
+.contact-section a, .follow-section a {
+    color: #3e3e3e;
+    text-decoration: none;
+}
+  
+.follow-section .social-icons a {
+    margin-right: 10px;
+}
+  
+.footer-bottom {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 35px;
+    font-size: 0.8rem;
+    background-color: #eee9e9;
+}
+  
+.footer-bottom a {
+    margin-left: 10px;
+    color: #333;
+    text-decoration: none;
+}
+  
+.legal-info {
+    display: flex;
+    align-items: center;
+}
+  
+  .legal-info img {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.instagram-btn {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+  
+.instagram-btn:hover {
+    transform: scale(1.1);
+}
+
+.facebook-btn {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+  
+.facebook-btn:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
