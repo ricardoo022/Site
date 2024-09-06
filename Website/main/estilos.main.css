@@ -290,7 +290,7 @@ html, body {
     padding: 10px 20px; /* Espaçamento interno para o texto */
     border-radius: 5px; /* Bordas arredondadas no fundo do texto */
     opacity: 0;
-    transition:.0,6s;
+    transition: opacity 0.6s ease-in-out;
 }
 
 .image-container:hover .text-overlay {
@@ -334,7 +334,7 @@ html, body {
     padding: 10px 20px; /* Espaçamento interno para o texto */
     border-radius: 5px; /* Bordas arredondadas no fundo do texto */
     opacity: 0;
-    transition:.0,6s;
+    transition: opacity 0.6s ease-in-out;
 
 }
 
@@ -449,14 +449,3 @@ footer {
 .facebook-btn:hover {
     transform: scale(1.1);
 }
-
-
-
-
-
-
-
-
-
-
-

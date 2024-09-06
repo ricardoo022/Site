@@ -1,0 +1,283 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo img{
+    max-width: 80px;
+    height: auto;
+    margin-right: 0;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+}
+.nav-links li {
+    margin: 0 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    transition: #d8a85c 0.3s ease;
+    
+}
+
+.nav-links a:hover {
+    color: #d8a85c; 
+}
+
+.dropdown .dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 3px 0;
+    margin: 0;
+    z-index: 1000;
+    width: 300px; /* Adjust the width of the dropdown menu */
+}
+
+.dropdown .dropdown-menu li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown .dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+.dropdown .dropdown-menu a {
+    padding: 10px 20px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown .dropdown-menu a:hover {
+    color: #d8a85c;
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.reservas {
+    background-color: black;
+    color: white !important;
+    padding: 15px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+
+.reservas:hover {
+    background-color: #d8a85c;
+}
+
+.contactsdiv{
+    
+    display: flex;
+    align-items: center; /* Center the list items */
+    justify-content: flex-start; /* Center the content vertically (if height is defined) */
+    height: 30px;
+    color: #333;
+    background-color: #eee9e9;
+    
+}
+
+.contacts{
+    list-style: none; /* Removes the bullet points from the list */
+    padding: 0; /* Remove default padding from the list */
+    margin: 15px; /* Remove default margin from the list */
+    display: flex;
+}
+.contacts li{
+    transition:0.3s ease;
+    font-size: 16px; /* Adjust the font size */
+    margin-bottom: 10px;
+    margin: 40px;
+
+}
+
+.contacts :hover {
+    color: #f0ca8c; 
+}
+
+
+.carousel-inner{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+
+
+.carousel-item img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.text{
+    margin: 10%;
+    font-family:'Playfair Display', serif;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-color: #f7f7f7; /* Light background */
+    padding: 4%;
+    border-radius: 8px;
+
+}
+
+h5 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/* Styling the list */
+.text ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0; /* Remove left padding */
+    text-align: center;
+}
+
+.text ul li {
+    font-size: 1.5rem;
+    line-height: 2;
+    margin-bottom: 10px;
+    position: relative; /* So we can position icons */
+}
+
+
+
+
+footer {
+    background-color: #f4f3f3bb;
+    color: #333;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 30px;
+}
+  
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+  
+.contact-section, .follow-section {
+    width: 30%;
+    
+}
+  
+.contact-section h3, .follow-section h3 {
+    font-size: 2;
+    margin-bottom: 10px;
+    font-weight: 500;
+    text-align: start;
+}
+
+.contact-section p{
+    margin: 0 10px;
+    font-size: 18px;
+    text-align: start;
+
+}
+  
+.contact-section a, .follow-section a {
+    color: #3e3e3e;
+    text-decoration: none;
+}
+  
+.follow-section .social-icons a {
+    margin-right: 10px;
+}
+  
+.footer-bottom {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 35px;
+    font-size: 0.8rem;
+    background-color: #eee9e9;
+}
+  
+.footer-bottom a {
+    margin-left: 10px;
+    color: #333;
+    text-decoration: none;
+}
+  
+.legal-info {
+    display: flex;
+    align-items: center;
+}
+  
+  .legal-info img {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.instagram-btn {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+  
+.instagram-btn:hover {
+    transform: scale(1.1);
+}
+
+.facebook-btn {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+  
+.facebook-btn:hover {
+    transform: scale(1.1);
+}
