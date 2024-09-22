@@ -284,3 +284,29 @@ footer {
         display: none; /* Oculta o logo em dispositivos móveis */
     }
 }
+
+
+.language-selector {
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    background-color: #ece5e5;
+}
+
+.language-selector a {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+    font-size: 16px;
+    transition: color 0.3s, font-weight 0.3s;
+}
+
+.language-selector a:focus {
+    font-weight: bold;
+    outline: none; /* Remove a borda padrão de foco */
+}
+
+.language-selector a:hover {
+    color: gray;
+}
+
