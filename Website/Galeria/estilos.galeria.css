@@ -522,3 +522,18 @@ img.hover-shadow {
 .language-selector a:hover {
     color: gray;
 }
+
+.language-selector {
+    display: flex;
+    gap: 15px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    background-color: #ece5e5d8;
+}
+
+@media (max-width: 600px) {
+    .language-selector {
+        padding-top: 5px;
+    }
+}
