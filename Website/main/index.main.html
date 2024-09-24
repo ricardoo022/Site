@@ -62,6 +62,61 @@
             </nav>            
         </section>
 
+        <div class="album-container abc">
+            <div class="booking-form">
+                <h3>Reserve:</h3>
+                <form action="#">
+                    <div class="check-date">
+                        <label for="date-in">Check In:</label>
+                        <input type="text" class="date-input" id="date-in" placeholder="Selecione a data">
+                        <i class="icon_calendar"></i>
+                    </div>
+                    <div class="check-date">
+                        <label for="date-out">Check Out:</label>
+                        <input type="text" class="date-input" id="date-out" placeholder="Selecione a data">
+                        <i class="icon_calendar"></i>
+                    </div>
+                    <div class="select-option">
+                        <label for="guest">Adultos:</label>
+                        <select id="guest">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                        <label for="guest-child">Crianças (menos de 12 anos):</label>
+                        <select id="guest-child">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                    </div>
+                    <div class="select-option">
+                        <label for="room">Quartos:</label>
+                        <select id="room">
+                            <option value="1">1 Quarto</option>
+                            <option value="2">2 Quartos</option>
+                            <option value="3">3 Quartos</option>
+                            <option value="4">4 Quartos</option>
+                            <option value="5">5 Quartos</option>
+                        </select>
+                    </div>
+                    <button type="submit">Check Availability</button>
+                </form>
+            </div>
+        </div>
 
         <!-- Album -->
         <section id="album">
@@ -143,38 +198,71 @@
             </div>
         </section>
         
-
-        <!-- Quartos -->
+        <!-- Icones 
+        <section id="icones-texto">
+            <div class="icones">
+                <div class="icone1">
+                    <img src="../Fotos/facebook.png" alt="Facebook" class="social-icon">
+                    <p class="texto-icones"> Wifi Gratuito</p>
+                </div>
+                <div class="icone2">
+                    <img src="../Fotos/facebook.png" alt="Facebook" class="social-icon">
+                    <p class="texto-icones"> Pague apenas ao chegar à casa </p>
+                </div>
+                <div class="icone3">
+                    <img src="../Fotos/facebook.png" alt="Facebook" class="social-icon">
+                    <p class="texto-icones"> ArCondicionado</p>
+                </div>
+                <div class="icone4">
+                    <img src="../Fotos/facebook.png" alt="Facebook" class="social-icon">
+                    <p class="texto-icones"> fffffsojfosj</p>
+                </div>
+                <div class="icone5">
+                    <img src="../Fotos/facebook.png" alt="Facebook" class="social-icon">
+                    <p class="texto-icones"> sfsfjsjflsjflsj </p>
+                </div>
+            </div>
+        </section>
+        -->
+        
         <section id="quarto">    
             <div id="quarto" class="container">
-                <div class="image-container ">
-                    <img src="..\Fotos\quarto.jpeg" alt="Quarto 1">
-                    <div class="text-overlay" id="image1">Quarto 1</div>
-                </div>
-                <div class="image-container">
-                    <img src="..\Fotos\quarto.jpeg" alt="Quarto 2">
-                    <div class="text-overlay" id="image2">Quarto 2</div>
-                </div>
-                <div class="image-container">
-                    <img src="..\Fotos\quarto.jpeg" alt="Quarto 3">
-                    <div class="text-overlay" id="image3">Quarto 3</div>
-                </div>
-                <div class="image-container">
-                    <img src="..\Fotos\quarto.jpeg" alt="Quarto 4">
-                    <div class="text-overlay" id="image4">Quarto 4</div>
-                </div>
-                <div class="image-container">
-                    <img src="..\Fotos\quarto.jpeg" alt="Quarto 5">
-                    <div class="text-overlay" id="image5">Quarto 5</div>
-                </div>
-                <div class="image-container">
-                    <img src="..\Fotos\quarto.jpeg" alt="Sala de estar">
-                    <div class="text-overlay" id="image6">Sala de estar</div>
-                </div>
-                <div class="image-container cozinha">
-                    <img class="img-cozinha" src="..\Fotos\cozinha.jpeg" alt="Cozinha">
-                    <div class="text-overlay" id="image7">Cozinha</div>
-                </div>
+                <a href="../Quartos1/index.quartos1.html">
+                    <div class="image-container">
+                        <img src="..\Fotos\quarto.jpeg" alt="Quarto 1">
+                        <div class="text-overlay">Quarto 1</div>
+                    </div>
+                </a>
+                <a href="../Quartos2/index.quartos2.html">
+                    <div class="image-container">
+                        <img src="..\Fotos\quarto.jpeg" alt="Quarto 2">
+                        <div class="text-overlay">Quarto 2</div>
+                    </div>
+                </a>
+                <a href="../Quartos3/index.quartos3.html">
+                    <div class="image-container">
+                        <img src="..\Fotos\quarto.jpeg" alt="Quarto 3">
+                        <div class="text-overlay">Quarto 3</div>
+                    </div>
+                </a>
+                <a href="../Quartos4/index.quartos4.html">
+                    <div class="image-container">
+                        <img src="..\Fotos\quarto.jpeg" alt="Quarto 4">
+                        <div class="text-overlay">Quarto 4</div>
+                    </div>
+                </a>
+                <a href="../Quartos5/index.quartos5.html">
+                    <div class="image-container">
+                        <img src="..\Fotos\quarto.jpeg" alt="Quarto 5">
+                        <div class="text-overlay">Quarto 5</div>
+                    </div>
+                </a>
+                <a href="../Cozinha/index.cozinha.html">
+                    <div class="image-container">
+                        <img src="..\Fotos\cozinha.jpeg" alt="Czinha">
+                        <div class="text-overlay">Cozinha</div>
+                    </div>
+                </a>
             </div>
         </section>
 

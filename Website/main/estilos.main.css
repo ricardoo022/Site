@@ -174,7 +174,7 @@ body {
     position: absolute;
     top: 30%; /* Padding superior em relação à imagem */
     right: 5%; /* Distância do lado direito */
-    transform: translateY(-18%); /* Centraliza verticalmente */
+    transform: translateY(-10%); /* Centraliza verticalmente */
     z-index: 10; /* Mantém o formulário acima da imagem */
 }
 
@@ -699,5 +699,49 @@ footer {
 
     .follow .social-icons {
         margin-bottom: 30px; /* Aumenta o espaço entre os ícones sociais e o "Livro de Reclamações" */
+    }
+}
+
+
+/*Language*/
+
+.language-selector {
+    display: flex;
+    gap: 15px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    background-color: #ece5e5d8;
+}
+
+.language-selector a {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+    font-size: 16px;
+    transition: color 0.3s, font-weight 0.3s;
+}
+
+.language-selector a:focus {
+    font-weight: bold;
+    outline: none; /* Remove a borda padrão de foco */
+}
+
+.language-selector a:hover {
+    color: gray;
+}
+
+.language-selector {
+    display: flex;
+    gap: 15px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    background-color: #ece5e5d8;
+}
+
+@media (max-width: 600px) {
+    .language-selector {
+        padding-top: 5px;
     }
 }

@@ -50,9 +50,8 @@ body {
 .navbar-brand, .nav-link, .dropdown-item {
     font-size:1rem; 
 }
-.nav-item{
-    padding-left: 1.5%;
-    padding-right: 1.5%;
+.nav-item {
+    margin: 2px 15px; /* Espaçamento vertical uniforme para todos os itens */
 }
 
 .dropdown .dropdown-menu {
@@ -143,6 +142,7 @@ body {
 
 }
 
+/**/
 
 /*Contactos*/
 
