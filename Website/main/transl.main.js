@@ -28,6 +28,19 @@ const translations = {
         image6:"Sala de estar",
         image7:"Cozinha",
 
+        reservation:"Reserva",
+        olders:"Adultos:",
+        youngers:"Crianças (menos de 12 anos):",
+        rooms_counter:"Quartos:",
+        counter1:"1 Quarto",
+        counter2:"2 Quartos",
+        counter3:"3 Quartos",
+        counter4:"4 Quartos",
+        counter5:"5 Quartos",
+        date_in:"Selecione a data",
+        date_out:"Selecione a data",
+
+
 
         contact_us: "Contacte-nos",
         follow_us: "Visite-nos",
@@ -64,6 +77,18 @@ const translations = {
         image6:"Living Room",
         image7:"Kitchen",
 
+        reservation:"Reserve",
+        olders:"Adults:",
+        youngers:"Children (under 12):",
+        rooms_counter:"Rooms:",
+        counter1:"1 Room",
+        counter2:"2 Rooms",
+        counter3:"3 Rooms",
+        counter4:"4 Rooms",
+        counter5:"5 Rooms",
+        date_in:"Select date",
+        date_out:"Select date",
+
         contact_us: "Contact us",
         follow_us: "Visit us",
         book: "Complaints Book",
@@ -85,6 +110,18 @@ const translations = {
         contacts: "CONTACTOS",
         location: "UBICACIÓN",
         reserve: "RESERVAS",
+
+        reservation:"Reserva",
+        olders:"Adultos:",
+        youngers:"Niños (menores de 12 años):",
+        rooms_counter:"Habitaciones:",
+        counter1:"1 Habitacione",
+        counter2:"2 Habitaciones",
+        counter3:"3 Habitaciones",
+        counter4:"4 Habitaciones",
+        counter5:"5 Habitaciones",
+        date_in:"Seleccionar fecha",
+        date_out:"Seleccionar fecha",
 
         title:"Bienvenido a BELESTAR - Tu casa en Belmonte",
         drop_cap1:"E",
@@ -121,6 +158,19 @@ const translations = {
         location: "EMPLACEMENT",
         reserve: "RÉSERVATIONS",
         contact_us: "Contactez-nous",
+
+        reservation:"Réservation",
+        olders:"Adultes:",
+        youngers:"Enfants (moins de 12 ans):",
+        rooms_counter:"Chambres:",
+        counter1:"1 Chambre",
+        counter2:"2 Chambres",
+        counter3:"3 Chambres",
+        counter4:"4 Chambres",
+        counter5:"5 Chambres",
+        date_in:"Sélectionner la date",
+        date_out:"Sélectionner la date",
+        
 
         title:"Bienvenue chez BELESTAR - Votre maison à Belmonte",
         drop_cap1:"A",
@@ -171,6 +221,18 @@ function setLanguage(lang) {
     document.getElementById('image5').textContent = translations[lang].image5 +"5";
     document.getElementById('image6').textContent = translations[lang].image6;
     document.getElementById('image7').textContent = translations[lang].image7;
+
+    document.getElementById('reservation').textContent = translations[lang].reservation;
+    document.getElementById('olders').textContent = translations[lang].olders;
+    document.getElementById('youngers').textContent = translations[lang].youngers;
+    document.getElementById('rooms_counter').textContent = translations[lang].rooms_counter;
+    document.getElementById('counter1').textContent = translations[lang].counter1;
+    document.getElementById('counter2').textContent = translations[lang].counter2;
+    document.getElementById('counter3').textContent = translations[lang].counter3;
+    document.getElementById('counter4').textContent = translations[lang].counter4;
+    document.getElementById('counter5').textContent = translations[lang].counter5;
+    document.getElementById('date_in').textContent = translations[lang].date_in;
+    document.getElementById('date_out').textContent = translations[lang].date_out;
 
 
 

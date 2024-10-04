@@ -394,6 +394,13 @@ input[type="radio"] {
     opacity: 0.8;
 }
 
+@media (max-width: 768px) {
+    .thumbnail-gallery{
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
 /*Language*/
 
 .language-selector {

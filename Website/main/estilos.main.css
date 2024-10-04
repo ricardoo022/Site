@@ -36,13 +36,15 @@ body {
     justify-content: center;
 }
 
+
+
 .home-button {
     background-color: #010101;
     color: white;
     border: none;
-    padding: 8px 16px; /* Reduzido para mobile */
+    padding: 8px 16px; 
     font-size: 14px;
-    border-radius: 6px; /* Reduzido para mobile */
+    border-radius: 6px; 
     text-align: center;
     cursor: pointer;
 }
@@ -265,8 +267,7 @@ body {
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         position: absolute;
         top: 25%; /* Padding superior em relação à imagem */
-        right: 5%; /* Distância do lado direito */
-        transform: translateX(-50%); /* Centraliza verticalmente */
+        transform: translateX(-38%); /* Centraliza verticalmente */
 
         z-index: 10; /* Mantém o formulário acima da imagem */
     }
@@ -394,35 +395,42 @@ body {
 
 
 /*Icones*/
+#icones-texto {
+    padding-bottom: 70px;
+}
 
 .icones {
     display: flex;
-    justify-content: space-between; /* Espaçamento igual entre os ícones */
-    padding: 0 10%; /* Espaçamento lateral simétrico */
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 6%;
+    padding-right: 6%;
 }
 
 .icones > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centraliza o ícone e o texto */
-    justify-content: center;
-    flex-grow: 1; /* Faz com que cada ícone cresça igualmente */
-    margin: 0 2%; /* Espaçamento lateral entre os ícones */
+    text-align: center;
+    margin: 10px;
+    flex: 1 1 150px;
 }
 
 .social-icon {
-    width: 50px; /* Ajuste o tamanho conforme necessário */
-    height: auto;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+    color: #d09b5a;
 }
 
 .texto-icones {
-    text-align: center;
-    margin-top: 10px; /* Espaço entre o ícone e o texto */
-    padding: 0; /* Remover padding desnecessário */
+    font-size: 20px;
+    padding-top: 10px;
+    color: #333;
+    margin: 0;
 }
 
-#icones-texto {
-    padding-bottom: 4%;
+@media (max-width: 768px) {
+    .icones {
+        display: none; /* Oculta os ícones */
+    }
 }
 
 
@@ -510,61 +518,149 @@ body {
 
 
 /*Sala de estar*/
-.galeria {
-    position: relative;
-    width: 1200px; /* Tamanho das imagens */
-    margin: 50px auto;
+/* General styles for the carousel */
+#carousel .container {
+    padding-bottom: 1%;
+    padding-top: 6%;
 }
 
-.imagem {
-    display: none;
-    padding: 10px; /* Espaço interno ao redor da imagem */
-    background-color: #f0f0f0; /* Cor de fundo para criar o retângulo */
-    border: 2px solid #ccc; /* Borda do retângulo */
-    border-radius: 10px; /* Borda arredondada */
+#carousel .carousel-inner {
+    padding-left: 1%;
+    padding-right: 2%;
+    padding-bottom: 9%;
 }
 
-.imagem img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px; /* Ajuste para borda da imagem dentro do retângulo */
+#carousel .carousel {
+    width: 900px;
 }
 
-.imagem.active {
-    display: block;
+#carousel .carousel-item img {
+    object-fit: cover;
 }
 
-.indicadores {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+#carousel .text-content-heading {
+    font-family: "IBM Plex Serif", sans-serif;
+    padding-bottom: 5%;
 }
 
-.indicador {
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-    background-color: #ccc;
-    border-radius: 50%;
-    cursor: pointer;
+#carousel .text-content {
+    font-family: "Alice", serif;
+    font-size: 120%;
 }
 
-.indicador.active {
-    background-color: #007BFF;
+#carousel .text-content-div {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    padding-top: 2%;
 }
 
-.indicador:hover {
-    background-color: #0056b3;
+#carousel .carousel-indicators {
+    top: 450px;
 }
 
+/* Small devices (phones) */
+@media (max-width: 767px) {
+    #carousel{
+        padding-bottom: 40px;
+        padding-top: 400px;
+    }
+    #carousel .texto-carrossel {
+        background-color: #f1f1f1;
+        position: absolute;
+        left: 65%; /* Adjust text position */
+        transform: translateX(-59%) translateY(900%); /* Center text */
+        bottom: -30%;
+        padding: 5px;
+        width: 310px; 
+        height: 500px; /* Decrease rectangle height */
+    }
 
+    #carousel .carousel {
+        width: 345px;
+        height: auto; /* Set to auto for responsive height */
+    }
 
+    #carousel .carousel-inner {
+        height: 500px; /* Adjust height of the inner carousel */
+    }
 
+    #carousel .carousel-item img {
+        max-height: 100%; /* Ensure images fit within the carousel */
+        width: 100%; /* Make sure images take full width */
+        object-fit: cover; /* Cover to maintain aspect ratio */
+    }
 
+    #carousel .carousel-indicators {
+        top: 250px; /* Adjusted top position for indicators */
+    }
 
+    #carousel .text-content {
+        font-family: "Alice", serif;
+        font-size: 130%;
+    }
 
+    #carousel .carousel-indicators {
+        top: 480px; /* Adjust position based on new heights */
+    }
+}
 
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+    #carousel{
+        padding-top: 240px;
+    }
 
+    #carousel .texto-carrossel {
+        background-color: #f1f1f1;
+        position: absolute;
+        left: 65%; /* Adjust text position */
+        transform: translateX(-60%) translateY(450%); 
+        bottom: -30%;
+        padding: 20px;
+        width: 600px; /* Increases rectangle width */
+    }
+
+    #carousel .carousel {
+        width: 700px;
+    }
+
+    #carousel .carousel-indicators {
+        top: 350px;
+    }
+}
+
+/* Large devices (laptops and desktops) */
+@media (min-width: 992px) and (max-width: 1599px) {
+    #carousel{
+        padding-top: 60px;
+    }
+    #carousel .texto-carrossel {
+        background-color: #f1f1f1;
+        position: absolute;
+        left: 65%; /* Adjust text position */
+        transform: translateX(-32%) translateY(580%); /* Center text */
+        bottom: -30%;
+        padding: 20px;
+        width: 620px; /* Increases rectangle width */
+    }
+}
+
+/* Extra large devices (larger monitors, desktops with high resolutions) */
+@media (min-width: 1600px) {
+    #carousel{
+        padding-top: 100px;
+    }
+    #carousel .texto-carrossel {
+        background-color: #f1f1f1;
+        position: absolute;
+        left: 65%; /* Adjust text position */
+        transform: translateX(-33%) translateY(590%); /* Center text */
+        bottom: -30%;
+        padding: 20px;
+        width: 550px; /* Increases rectangle width */
+    }
+}
 
 
 
@@ -649,7 +745,7 @@ footer {
 }
 
 #footer {
-    padding-top: 5%;
+    padding-top: 1%;
 }
 
 .footer-bottom {

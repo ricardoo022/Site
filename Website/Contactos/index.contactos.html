@@ -68,36 +68,38 @@
         
         <!--Contactos-->
         <section id="contact-us">
-            <form class="mt-4" action="https://formsubmit.co/wedding.chauffeur.carocha@gmail.com" method="post"></form>
-                <div class="container">
-                    <div class="contact-form">
-                        <h2 id="contact">CONTACTE-NOS</h2>
-                        <form action="#">
-                            <div class="form-group">
-                                <input type="text" placeholder="Nome" id="contact_form_placeholder_name" required>
-                                <input type="email" placeholder="Email" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" placeholder="Assunto" id="contact_form_placeholder_subject" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea placeholder="Mensagem" id="contact_form_placeholder_message" required></textarea>
-                            </div>
-                            <button type="submit" id="button_submit">ENVIAR</button>
-                        </form>
-                    </div>
-                    <div class="map-container">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239.62984089276657!2d-7.35115378543493!3d40.35911475526855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3d1c2a97e47d23%3A0x1722257be2416a22!2sLargo%20Dr.%20Ant%C3%B3nio%20Jos%C3%A9%20de%20Almeida%2049%2C%206250-031%20Belmonte!5e0!3m2!1spt-PT!2spt!4v1725474295755!5m2!1spt-PT!2spt"
-                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-                        </iframe>
-                    </div>
+            <div class="container">
+                <div class="contact-form">
+                    <h2 id="contact">CONTACTE-NOS</h2>
+                    <form method="post" action="send_email.php">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Nome" id="contact_form_placeholder_name" required>
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Assunto" id="contact_form_placeholder_subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Mensagem" id="contact_form_placeholder_message" required></textarea>
+                        </div>
+                        <div class="botao">
+                            <button type="submit" class="buttom-submit">Enviar</button>
+                        </div>
+                        
+                    </form>
                 </div>
-            </form>
+                
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239.62984089276657!2d-7.35115378543493!3d40.35911475526855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3d1c2a97e47d23%3A0x1722257be2416a22!2sLargo%20Dr.%20Ant%C3%B3nio%20Jos%C3%A9%20de%20Almeida%2049%2C%206250-031%20Belmonte!5e0!3m2!1spt-PT!2spt!4v1725474295755!5m2!1spt-PT!2spt"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
         </section>
 
+
         <!-- Footer -->
-       <!-- Footer -->
        <section id="footer">
         <footer>
             <div class="footer-container">

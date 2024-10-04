@@ -17,7 +17,7 @@ const translations = {
 
         title:"TESTEMUNHOS",
         text1:"Gostamos muito do apartamento, localização, limpeza e sobretudo da atenção que a Isabel e Cristina tiveram connosco. Também de ressalvar que o responsável foi bastante atencioso, pois a nosso pedido forneceram o pequeno almoço mais cedo e permitiram check-out tardio.",
-        text2:"Que lugar maravilhoso! A cama era super confortável e todo o lugar é muito elegante. A localização é muito conveniente, a alguns quarteirões da praia, perto de restaurantes, e o autocarro e metro estão ao virar da esquina. Quando retornar a Casa Rietsch será a minha primeira escolha.",
+        text2:"Que lugar maravilhoso! A cama era super confortável e todo o lugar é muito elegante. A localização é muito conveniente, a alguns quarteirões da praia, perto de restaurantes, e o autocarro e metro estão ao virar da esquina. Quando retornar será a minha primeira escolha.",
         text3:" O quarto estava particularmente bem decorado, impecável, camas deliciosas e um chuveiro unidimensional. O bairro é super divertido, perto da praia. Saímos na manhã seguinte cedo para o aeroporto, por isso infelizmente ficamos apenas 1 noite, mas certamente gostamos de voltar!",
 
         contact_us: "Contacte-nos",
@@ -44,7 +44,7 @@ const translations = {
 
         title:"TESTIMONIES",
         text1:"We really liked the apartment, its location, cleanliness and above all the attention that Isabel and Cristina gave us. It is also worth mentioning that the person in charge was very attentive, as at our request they provided breakfast earlier and allowed us to check out late.",
-        text2:"What a wonderful place! The bed was super comfortable and the whole place is very stylish. The location is very convenient, a few blocks from the beach, close to restaurants, and the bus and metro are just around the corner. When I return Casa Rietsch will be my first choice.",
+        text2:"What a wonderful place! The bed was super comfortable and the whole place is very stylish. The location is very convenient, a few blocks from the beach, close to restaurants, and the bus and metro are just around the corner. When I return will be my first choice.",
         text3:"The room was particularly well decorated, spotless, delicious beds and a one-dimensional shower. The neighborhood is super fun, close to the beach. We left early the next morning for the airport, so unfortunately we only stayed 1 night, but we would certainly come back!",
        
         contact_us: "Contact us",
@@ -71,7 +71,7 @@ const translations = {
 
         title:"TESTIMONIOS",
         text1:"Nos gustó mucho el apartamento, la ubicación, la limpieza y sobre todo la atención que nos brindaron Isabel y Cristina. Cabe destacar también que la persona encargada fue muy atenta, ya que a petición nuestra nos facilitaron el desayuno más temprano y permitieron el check-out más tarde.",
-        text2:"¡Qué lugar tan maravilloso! La cama era súper cómoda y todo el lugar es muy elegante. La ubicación es muy conveniente, a pocas cuadras de la playa, cerca de restaurantes y el autobús y el metro están a la vuelta de la esquina. Cuando regrese, Casa Rietsch será mi primera opción.",
+        text2:"¡Qué lugar tan maravilloso! La cama era súper cómoda y todo el lugar es muy elegante. La ubicación es muy conveniente, a pocas cuadras de la playa, cerca de restaurantes y el autobús y el metro están a la vuelta de la esquina. Cuando regrese, será mi primera opción.",
         text3:" La habitación estaba particularmente bien decorada, impecable, camas deliciosas y una ducha unidimensional. El barrio es súper divertido, cerca de la playa. Salimos temprano a la mañana siguiente hacia el aeropuerto, así que desafortunadamente solo nos quedamos una noche, ¡pero ciertamente disfrutamos regresar!",
 
         contact_us: "Contáctenos",

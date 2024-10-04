@@ -64,20 +64,20 @@
 
         <div class="album-container abc">
             <div class="booking-form">
-                <h3>Reserve:</h3>
+                <h3 id="reservation">Reserva:</h3>
                 <form action="#">
                     <div class="check-date">
                         <label for="date-in">Check In:</label>
-                        <input type="text" class="date-input" id="date-in" placeholder="Selecione a data">
+                        <input type="text" class="date-input" id="date_in" placeholder="Selecione a data">
                         <i class="icon_calendar"></i>
                     </div>
                     <div class="check-date">
                         <label for="date-out">Check Out:</label>
-                        <input type="text" class="date-input" id="date-out" placeholder="Selecione a data">
+                        <input type="text" class="date-input" id="date_out" placeholder="Selecione a data">
                         <i class="icon_calendar"></i>
                     </div>
                     <div class="select-option">
-                        <label for="guest">Adultos:</label>
+                        <label for="guest" id="olders">Adultos:</label>
                         <select id="guest">
                             <option value="0">0</option>
                             <option value="1">1</option>
@@ -91,7 +91,7 @@
                             <option value="9">9</option>
                             <option value="10">10</option>
                         </select>
-                        <label for="guest-child">Crianças (menos de 12 anos):</label>
+                        <label for="guest-child" id="youngers">Crianças (menos de 12 anos):</label>
                         <select id="guest-child">
                             <option value="0">0</option>
                             <option value="1">1</option>
@@ -104,13 +104,13 @@
                         </select>
                     </div>
                     <div class="select-option">
-                        <label for="room">Quartos:</label>
+                        <label for="room" id="rooms_counter">Quartos:</label>
                         <select id="room">
-                            <option value="1">1 Quarto</option>
-                            <option value="2">2 Quartos</option>
-                            <option value="3">3 Quartos</option>
-                            <option value="4">4 Quartos</option>
-                            <option value="5">5 Quartos</option>
+                            <option value="1" id="counter1">1 Quarto</option>
+                            <option value="2" id="counter2">2 Quartos</option>
+                            <option value="3" id="counter3">3 Quartos</option>
+                            <option value="4" id="counter4">4 Quartos</option>
+                            <option value="5" id="counter5">5 Quartos</option>
                         </select>
                     </div>
                     <button type="submit">Check Availability</button>
@@ -198,32 +198,31 @@
             </div>
         </section>
         
-        <!-- Icones 
         <section id="icones-texto">
             <div class="icones">
                 <div class="icone1">
-                    <img src="../Fotos/facebook.png" alt="Facebook" class="social-icon">
+                    <img src="../Fotos/wifi.png" alt="Facebook" class="social-icon">
                     <p class="texto-icones"> Wifi Gratuito</p>
                 </div>
                 <div class="icone2">
-                    <img src="../Fotos/facebook.png" alt="Facebook" class="social-icon">
-                    <p class="texto-icones"> Pague apenas ao chegar à casa </p>
+                    <img src="../Fotos/cartao.png" alt="Facebook" class="social-icon">
+                    <p class="texto-icones"> Pague quando chegar</p>
                 </div>
                 <div class="icone3">
-                    <img src="../Fotos/facebook.png" alt="Facebook" class="social-icon">
-                    <p class="texto-icones"> ArCondicionado</p>
+                    <img src="../Fotos/ar-condicionado.png" alt="Facebook" class="social-icon">
+                    <p class="texto-icones"> Ar Condicionado</p>
                 </div>
                 <div class="icone4">
-                    <img src="../Fotos/facebook.png" alt="Facebook" class="social-icon">
-                    <p class="texto-icones"> fffffsojfosj</p>
+                    <img src="../Fotos/euro.png" alt="Facebook" class="social-icon">
+                    <p class="texto-icones"> Melhor preço garantido</p>
                 </div>
                 <div class="icone5">
-                    <img src="../Fotos/facebook.png" alt="Facebook" class="social-icon">
-                    <p class="texto-icones"> sfsfjsjflsjflsj </p>
+                    <img src="../Fotos/sofá.png" alt="Facebook" class="social-icon">
+                    <p class="texto-icones"> Conforto Assegurado </p>
                 </div>
             </div>
         </section>
-        -->
+        
         
         <section id="quarto">    
             <div id="quarto" class="container">
@@ -265,6 +264,68 @@
                 </a>
             </div>
         </section>
+
+
+        <!-- Carrousel Section -->
+        <section id="carousel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../Fotos/sala-de-estar.jpg" class="d-block w-100 carousel-img" alt="Slide 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../Fotos/sala-de-estar.jpg" class="d-block w-100 carousel-img" alt="Slide 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../Fotos/sala-de-estar.jpg" class="d-block w-100 carousel-img" alt="Slide 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../Fotos/sala-de-estar.jpg" class="d-block w-100 carousel-img" alt="Slide 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../Fotos/sala-de-estar.jpg" class="d-block w-100 carousel-img" alt="Slide 5">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../Fotos/sala-de-estar.jpg" class="d-block w-100 carousel-img" alt="Slide 6">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../Fotos/sala-de-estar.jpg" class="d-block w-100 carousel-img" alt="Slide 7">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-5 d-flex align-items-center texto-carrossel">
+                        <div class="text-content-div">
+                            <h2 class="text-content-heading heading-first display-6 fw-bold lh-1 text-body-emphasis">Sala de estar</h2>
+                            <p class="text-content">A nossa sala de estar é o espaço perfeito para relaxar e sentir-se em casa. Com uma decoração acolhedora e moderna, este ambiente oferece todo o conforto que você precisa para momentos de descanso ou convívio. Equipado com sofás confortáveis, uma televisão de ecrã plano, e acesso a Wi-Fi gratuito, é ideal tanto para desconectar após um dia de passeios como para assistir aos seus programas favoritos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+       
 
     
 
