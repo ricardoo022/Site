@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A casa-Casa NOME</title>
+
+    <link rel="icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./check-out.css">
+    <style>
+        /* Estilos básicos */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            padding-top: 120px; /* Espaço para o header fixo */
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 10px 20px;
+            height: 110px; /* Header mais alto */
+            border-bottom: 1px solid #ddd;
+            z-index: 1000; /* Para garantir que o header fique por cima do conteúdo */
+        }
+
+        /* Logo */
+        .logo {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-right: 50px;
+        }
+
+        /* Estilos do progresso */
+        .progress {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding-top: 60px;
+            padding-bottom: 50px;
+            padding-left: 60px;
+            padding-right: 60px;
+            background-color: white;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Estilos do círculo de cada passo */
+        .step-circle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid #8b5e3c; /* Borda marrom */
+            color: #8b5e3c; /* Texto marrom */
+            font-weight: bold;
+            font-size: 14px;
+            background-color: white; /* Remove fundo cinzento */
+        }
+
+        /* Estilos para o passo ativo e completo */
+        .step-circle.completed {
+            background-color: #8b5e3c; /* Fundo marrom para passos completos */
+            color: white;
+        }
+
+        .step-circle.active {
+            background-color: #8b5e3c; /* Fundo marrom para o passo ativo */
+            color: white;
+        }
+
+        /* Linha pontilhada entre os passos */
+        .dotted-line {
+            width: 100px;
+            border-bottom: 3px dotted black;
+            margin: 0 0px;
+        }
+
+        /* Estilo para a mensagem de sucesso */
+        #bookedMessage {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com opacidade */
+        color: #333; /* Texto cinza escuro */
+        padding: 20px 40px;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1000;
+        transition: opacity 0.3s, visibility 0.3s;
+        }
+
+        /* Quando a mensagem estiver ativa */
+        #bookedMessage.active {
+        opacity: 1;
+        visibility: visible;
+        }
+
+        /* Adiciona uma sobreposição de opacidade ao conteúdo */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8); /* Fundo preto com opacidade */
+            z-index: 999; /* Fica abaixo da mensagem de sucesso */
+        }
+
+
+        
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a class="navbar-brand logo" href="../main/index.main.html">
+                <img src="../Fotos/Logotipo.png" alt="Logotipo" height="80">
+            </a>
+        </div>
+        <div class="progress">
+            <div class="step">
+                <div class="step-circle completed">✔</div>
+                <div class="step-label">Escolher dias</div>
+            </div>
+            <div class="dotted-line"></div>
+            <div class="step">
+                <div class="step-circle active">2</div>
+                <div class="step-label active">Detalhes dos quartos</div>
+            </div>
+            <div class="dotted-line"></div>
+            <div class="step">
+                <div class="step-circle">3</div>
+                <div class="step-label">Confirmação</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="checkout-container">
+      <!-- Checkout Form -->
+      <div class="checkout-form">
+        <h2>Informações Pessoais</h2>
+        <form id="checkoutForm">
+          <div class="form-group">
+            <label for="name">Nome Completo</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Número de Telefone</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="taxNumber">Número de Contribuinte</label>
+            <input type="text" id="taxNumber" name="taxNumber" required>
+          </div>
+          <div class="form-group">
+            <label for="country">País</label>
+            <select id="country" name="country" class="country-dropdown">
+              <option value="portugal" selected>Portugal</option>
+              <option value="espanha">Espanha</option>
+              <option value="franca">França</option>
+              <option value="inglaterra">Inglaterra</option>
+            </select>
+          </div>
+          <button type="submit" class="submit-button">Confirmar Reserva</button>
+        </form>
+      </div>
+    
+      <!-- Reservation Summary -->
+      <!-- Existing Reservation Summary section -->
+        <div class="reservation-summary">
+            <h2 class="summary-title">Resumo da Reserva</h2>
+            <div class="summary-details">
+            <div class="summary-item">
+                <span>Data de Check-in:</span>
+                <span id="checkinDate">01/01/2024</span>
+            </div>
+            <div class="summary-item">
+                <span>Data de Check-out:</span>
+                <span id="checkoutDate">05/01/2024</span>
+            </div>
+            <div class="summary-item">
+                <span>Total de Noites:</span>
+                <span id="totalNights">4</span>
+            </div>
+            <h3>Quartos Selecionados:</h3>
+            <div id="roomsSummary"></div>
+            <div class="total-price">Total da Reserva: €<span id="totalAmount">0</span></div>
+            
+            <!-- New Section for Extra Information -->
+            <div class="form-group extra-info-container">
+                <label for="extraInfo">Informações Extras</label>
+                <textarea id="extraInfo" name="extraInfo" placeholder="Ex: Necessito de um berço" rows="4" class="extra-info"></textarea>            
+            </div>
+            </div>
+        </div>
+  
+    </div>
+
+
+    <div id="bookedMessage">Reserva confirmada! Você será contactado em breve.</div>
+
+<!-- Footer -->
+<section id="footer">
+    <footer>
+        <div class="footer-container">
+            <div class="logo1">
+                <img src="../Fotos/Logotipo.png" alt="Borcelle Studio Logo">
+            </div>
+            <div class="contact">
+                <h3 id="contact_us">Contacte-nos</h3>
+                <ul>
+                    <li>
+                        <img src="../Fotos/location.png" alt="Localização" class="icon">
+                        <span>Largo Dr. António José de Almeida</span>
+                    </li>
+                    <li>
+                        <img src="../Fotos/phone.png" alt="Tel" class="icon">
+                        <span>+351 999 333 333</span>
+                    </li>
+                    <li>
+                        <img src="../Fotos/email.png" alt="email" class="icon">
+                        <span>hello@domain.com</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="follow">
+                <h3 id="follow_us">Visite-nos</h3>
+                <div class="social-icons">
+                    <a href="#">
+                        <img src="../Fotos/facebook.png" alt="Facebook" class="social-icon">
+                    </a>
+                    <a href="#">
+                        <img src="../Fotos/instagram.png" alt="Instagram" class="social-icon">
+                    </a>
+                    <a href="#">
+                        <img src="../Fotos/airbnb.png" alt="Airbnb" class="social-icon">
+                    </a>
+                    <a href="#">
+                        <img src="../Fotos/booking.svg" alt="Booking" class="social-icon">
+                    </a>
+                </div>
+                    <a  >
+                        <h3 class="reclamacoes" id="book">Livro de Reclamações</h3>
+                            <img src="../Fotos/reclamacoes.png" alt="Livro de Reclamações" class="complaint-logo" >
+                        </h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+
+<div class="footer-bottom">
+    <p id="polites1">Concept by SalesUp © Copyright - Active Up. Todos os direitos reservados.</p>
+    <a href="#" id="polites2">Política de Privacidade</a>
+</div>
+
+
+<script src="check-out.js"></script> 
+    
+</body>
+</html>
+
