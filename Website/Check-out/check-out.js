@@ -34,7 +34,7 @@ updateReservationSummary();
 // Manipulador de envio do formulário de checkout
 document.getElementById("checkoutForm").addEventListener("submit", function(event) {
   event.preventDefault(); // Previne o comportamento padrão do formulário
-
+  
   // Exibe a mensagem de reserva confirmada
   const bookedMessage = document.getElementById('bookedMessage');
   bookedMessage.classList.add('active');

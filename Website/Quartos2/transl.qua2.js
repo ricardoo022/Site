@@ -2,12 +2,6 @@ const translations = {
     pt: {
         home: "CASA",
         belmonte: "BELMONTE",
-        rooms: "QUARTOS",
-        room1:"QUARTO",
-        room2:"QUARTO",
-        room3:"QUARTO",
-        room4:"QUARTO",
-        room5:"QUARTO",
         kitchen: "COZINHA",
         gallery: "GALERIA",
         testimonials: "TESTEMUNHOS",
@@ -15,12 +9,16 @@ const translations = {
         location: "LOCALIZAÇÃO",
         reserve: "RESERVAS",
 
-        titleRoom:"Quarto",
+        rooms:"QUARTOS",
+        titleRoom:"Quarto Castelo",
         title:"QUARTO | AR CONDICIONADO | INSONORIZAÇÃO | WI-FI GRATUITO | ÁREA 46m²",
-        comodatiesBold:"COMODIDADES:",
-        comodaties:" Suite situada no piso térreo acessível a cadeira de rodas | Área de estar | Área de trabalho | Roupa de Cama | Tomada perto da cama | Suporte para cabides | Cama extra (suplemento)",
-        textBold:"POSSIBILIDADE DE UTILIZAR:",
-        text:" Cozinha comum totalmente equipada | 2 Salas comum com lareira | Sala comum de TV | Terraço | Quintal",
+        textRoom:"Quarto “Castelo” é um espaço encantador e cheio de personalidade, perfeito para os amantes de paisagens. A varanda oferece uma vista direta para a vila, onde se podem observar as ruas históricas e o charme acolhedor de Belmonte. Além disso, há uma janela adicional externa para a majestosa Serra da Estrela, proporcionando uma visão panorâmica das montanhas e permitindo a entrada de luz natural",
+        textRoom2:"O destaque do quarto é a cama de casal de ferro, que evoca um estilo rústico e romântico, complementando o ambiente com charme e conforto. É decorada com roupa de cama suave e tons que harmonizam com a madeira e o ferro.",
+        textRoom3:"A varanda é equipada com uma pequena mesa e cadeiras, convidando o hóspede a relaxar ao ar livre, apreciar o pôr-do-sol sobre a vila ou admirar as vistas matinais da Serra. É o espaço ideal para uma estadia serena, onde se pode ligar com a natureza e o ambiente cultural de Belmonte",
+        textBottom1:"WC | Duche | Produtos de higiene pessoal gratuitos | Toalhas | Secador de cabelo",
+        textBold1:"CASA DE BANHO:",
+        textBottom2:" Cozinha comum totalmente equipada | 2 Salas comum com lareira | Sala comum de TV | Terraço | Quintal",
+        textBold2:"POSSIBILIDADE DE UTILIZAR:",
 
         contact_us: "Contacte-nos",
         follow_us: "Visite-nos",
@@ -31,12 +29,6 @@ const translations = {
     en: {
         home: "HOME",
         belmonte: "BELMONTE",
-        rooms: "ROOMS",
-        room1:"ROOM",
-        room2:"ROOM",
-        room3:"ROOM",
-        room4:"ROOM",
-        room5:"ROOM",
         kitchen: "KITCHEN",
         gallery: "GALLERY",
         testimonials: "TESTIMONIALS",
@@ -44,12 +36,16 @@ const translations = {
         location: "LOCATION",
         reserve: "RESERVATIONS",
 
-        titleRoom:"Bedroom",
-        title:"ROOM | AIR CONDITIONING | SOUNDPROOFING | FREE WI-FI | AREA 46m²",
-        comodatiesBold:"FACILITIES:",
-        comodaties:" Ground floor suite, wheelchair accessible | Living area | Work area | Bed linen | Socket near the bed | Clothes rack | Extra bed (supplement)",
-        textBold:"POSSIBILITY OF USE:",
-        text:" Fully equipped common kitchen | 2 common rooms with fireplace | Common TV room | Terrace | Backyard",
+        rooms: "ROOMS",
+        titleRoom: "Castelo Room",
+        title: "ROOM | AIR CONDITIONING | SOUNDPROOFING | FREE WI-FI | AREA 46m²",
+        textRoom: "The “Castle” Room is a charming and full-of-character space, perfect for landscape lovers. The balcony offers a direct view of the village, where you can see the historic streets and the welcoming charm of Belmonte. Additionally, there is an extra external window facing the majestic Serra da Estrela, providing a panoramic view of the mountains and allowing natural light to enter.",
+        textRoom2: "The highlight of the room is the iron double bed, which evokes a rustic and romantic style, complementing the ambiance with charm and comfort. It is adorned with soft bedding in tones that harmonize with the wood and iron.",
+        textRoom3: "The balcony is equipped with a small table and chairs, inviting guests to relax outdoors, enjoy the sunset over the village, or admire the morning views of the Serra. It is the ideal space for a serene stay, where you can connect with nature and the cultural atmosphere of Belmonte.",
+        textBottom1: "WC | Shower | Free toiletries | Towels | Hairdryer",
+        textBold1: "BATHROOM:",
+        textBottom2: " Fully equipped shared kitchen | 2 Shared living rooms with fireplace | Shared TV room | Terrace | Backyard",
+        textBold2: "FACILITIES AVAILABLE:",
 
         contact_us: "Contact us",
         follow_us: "Visit us",
@@ -60,12 +56,6 @@ const translations = {
     es: {
         home: "CASA",
         belmonte: "BELMONTE",
-        rooms: "HABITACIONES",
-        room1:"HABITACIONE",
-        room2:"HABITACIONE",
-        room3:"HABITACIONE",
-        room4:"HABITACIONE",
-        room5:"HABITACIONE",
         kitchen: "COCINA",
         gallery: "GALERÍA",
         testimonials: "TESTIMONIOS",
@@ -73,12 +63,16 @@ const translations = {
         location: "UBICACIÓN",
         reserve: "RESERVAS",
 
-        titleRoom:"Habitación",
-        title:"HABITACIÓN | AIRE ACONDICIONADO | INSONORIZACIÓN | WI-FI GRATIS | ÁREA 46m²",
-        comodatiesBold:"FACILITIES:",
-        comodaties:" Suite ubicada en planta baja accesible a sillas de ruedas | Sala de estar | Escritorio | Ropa de cama | Enchufe cerca de la cama | Soporte para perchas | Cama supletoria (suplemento)",
-        textBold:"POSIBILIDAD DE USO:",
-        text:" Cocina común totalmente equipada | 2 salas comunes con chimenea | Sala de televisión común | Terraza | Patio",
+        rooms: "HABITACIONES",
+        titleRoom: "Habitación Castelo",
+        title: "HABITACIÓN | AIRE ACONDICIONADO | INSONORIZACIÓN | WI-FI GRATUITO | ÁREA 46m²",
+        textRoom: "La Habitación “Castillo” es un espacio encantador y lleno de personalidad, perfecto para los amantes de los paisajes. El balcón ofrece una vista directa al pueblo, donde se pueden observar las calles históricas y el encanto acogedor de Belmonte. Además, hay una ventana exterior adicional con vista a la majestuosa Serra da Estrela, proporcionando una vista panorámica de las montañas y permitiendo la entrada de luz natural.",
+        textRoom2: "El punto destacado de la habitación es la cama doble de hierro, que evoca un estilo rústico y romántico, complementando el ambiente con encanto y confort. Está decorada con ropa de cama suave y tonos que armonizan con la madera y el hierro.",
+        textRoom3: "El balcón está equipado con una pequeña mesa y sillas, invitando al huésped a relajarse al aire libre, disfrutar del atardecer sobre el pueblo o admirar las vistas matutinas de la Serra. Es el espacio ideal para una estancia serena, donde puedes conectarte con la naturaleza y el ambiente cultural de Belmonte.",
+        textBottom1: "WC | Ducha | Productos de higiene personal gratuitos | Toallas | Secador de pelo",
+        textBold1: "BAÑO:",
+        textBottom2: " Cocina compartida totalmente equipada | 2 Salas de estar compartidas con chimenea | Sala de TV compartida | Terraza | Patio",
+        textBold2: "INSTALACIONES DISPONIBLES:",
 
        
         contact_us: "Contáctenos",
@@ -90,12 +84,6 @@ const translations = {
     fr: {
         home: "MAISON",
         belmonte: "BELMONTE",
-        rooms: "CHAMBRE",
-        room1:"CHAMBRE",
-        room2:"CHAMBRE",
-        room3:"CHAMBRE",
-        room4:"CHAMBRE",
-        room5:"CHAMBRE",
         kitchen: "CUISINE",
         gallery: "GALERIE",
         testimonials: "TÉMOIGNAGES",
@@ -104,12 +92,16 @@ const translations = {
         reserve: "RÉSERVATIONS",
         contact_us: "Contactez-nous",
 
-        titleRoom:"Chambre",
-        title:"CHAMBRE | CLIMATISATION | INSONORISATION | CONNEXION WI-FI GRATUITE | SUPERFICIE 46m²",
-        comodatiesBold:"COMMODITÉS:",
-        comodaties:" Suite située au rez-de-chaussée accessible aux fauteuils roulants | Surface habitable | Bureau | Linge de lit | Prise près du lit | Support de suspension | Lit supplémentaire (supplément)",
-        textBold:"POSSIBILITÉ D'UTILISATION:",
-        text:" Cuisine commune entièrement équipée | 2 salles communes avec foyer | Salle de télévision commune | Terrasse | Cour",
+        rooms: "CHAMBRES",
+        titleRoom: "Chambre Castelo",
+        title: "CHAMBRE | CLIMATISATION | INSONORISATION | WI-FI GRATUIT | SURFACE 46m²",
+        textRoom: "La chambre “Château” est un espace charmant et plein de caractère, parfait pour les amoureux des paysages. Le balcon offre une vue directe sur le village, où l'on peut observer les rues historiques et le charme accueillant de Belmonte. De plus, une fenêtre supplémentaire donne sur la majestueuse Serra da Estrela, offrant une vue panoramique sur les montagnes et permettant à la lumière naturelle d'entrer.",
+        textRoom2: "Le point fort de la chambre est le lit double en fer, qui évoque un style rustique et romantique, complétant l'ambiance avec charme et confort. Il est décoré avec une literie douce et des tons qui harmonisent le bois et le fer.",
+        textRoom3: "Le balcon est équipé d'une petite table et de chaises, invitant l'hôte à se détendre en plein air, à apprécier le coucher du soleil sur le village ou à admirer les vues matinales de la Serra. C'est l'espace idéal pour un séjour serein, où l'on peut se connecter avec la nature et l'ambiance culturelle de Belmonte.",
+        textBottom1: "WC | Douche | Produits de toilette gratuits | Serviettes | Sèche-cheveux",
+        textBold1: "SALLE DE BAIN :",
+        textBottom2: " Cuisine commune entièrement équipée | 2 Salles communes avec cheminée | Salle commune de TV | Terrasse | Cour",
+        textBold2: "POSSIBILITÉ D'UTILISER :",
 
         follow_us: "Suivez-nous",
         book: "Livre des Réclamations",
@@ -122,11 +114,6 @@ const translations = {
 function setLanguage(lang) {
     document.getElementById('home').textContent = translations[lang].home;
     document.querySelector('a[href="../Belmonte/index.belmonte.html"]').textContent = translations[lang].belmonte;
-    document.querySelector('a[href="../Quartos1/index.quartos1.html"]').textContent = translations[lang].room1 + " 1";
-    document.querySelector('a[href="./index.quartos2.html"]').textContent = translations[lang].room2 + " 2";
-    document.querySelector('a[href="../Quartos3/index.quartos3.html"]').textContent = translations[lang].room3 + " 3";
-    document.querySelector('a[href="../Quartos4/index.quartos4.html"]').textContent = translations[lang].room4 + " 4";
-    document.querySelector('a[href="../Quartos5/index.quartos5.html"]').textContent = translations[lang].room5 + " 5";
     document.querySelector('a[href="../Cozinha/index.cozinha.html"]').textContent = translations[lang].kitchen;
     document.querySelector('a[href="../Galeria/index.galeria.html"]').textContent = translations[lang].gallery;
     document.querySelector('a[href="../Testemunhos/index.testemunhos.html"]').textContent = translations[lang].testimonials;
@@ -136,10 +123,13 @@ function setLanguage(lang) {
 
     // Atualizar o texto da seção principal
     document.getElementById('rooms').textContent = translations[lang].rooms;
-    document.getElementById('titleRoom').textContent = translations[lang].titleRoom + " 2";
-    document.getElementById('title').textContent = translations[lang].title ;
-    document.getElementById('comodaties').innerHTML = '<strong>' + translations[lang].comodatiesBold + '</strong> ' + translations[lang].comodaties;
-    document.getElementById('text').innerHTML = '<strong>' + translations[lang].textBold + '</strong> ' + translations[lang].text;
+    document.getElementById('titleRoom').textContent = translations[lang].titleRoom;
+    document.getElementById('title').textContent = translations[lang].title;
+    document.getElementById('textRoom').textContent = translations[lang].textRoom;
+    document.getElementById('textRoom2').textContent = translations[lang].textRoom2;
+    document.getElementById('textRoom3').textContent = translations[lang].textRoom3;
+    document.getElementById('textBottom1').innerHTML = '<strong>' + translations[lang].textBold1 + '</strong> ' + translations[lang].textBottom1;
+    document.getElementById('textBottom2').innerHTML = '<strong>' + translations[lang].textBold2 + '</strong> ' + translations[lang].textBottom2;
 
 
 

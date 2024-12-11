@@ -3,11 +3,6 @@ const translations = {
         home: "CASA",
         belmonte: "BELMONTE",
         rooms: "QUARTOS",
-        room1:"QUARTO",
-        room2:"QUARTO",
-        room3:"QUARTO",
-        room4:"QUARTO",
-        room5:"QUARTO",
         kitchen: "COZINHA",
         gallery: "GALERIA",
         testimonials: "TESTEMUNHOS",
@@ -15,12 +10,14 @@ const translations = {
         location: "LOCALIZAÇÃO",
         reserve: "RESERVAS",
 
-        titleRoom:"Quarto",
+        rooms:"QUARTOS",
+        titleRoom:"Quarto Serra da Estrela",
         title:"QUARTO | AR CONDICIONADO | INSONORIZAÇÃO | WI-FI GRATUITO | ÁREA 46m²",
-        comodatiesBold:"COMODIDADES:",
-        comodaties:" Suite situada no piso térreo acessível a cadeira de rodas | Área de estar | Área de trabalho | Roupa de Cama | Tomada perto da cama | Suporte para cabides | Cama extra (suplemento)",
-        textBold:"POSSIBILIDADE DE UTILIZAR:",
-        text:" Cozinha comum totalmente equipada | 2 Salas comum com lareira | Sala comum de TV | Terraço | Quintal",
+        textRoom:"Quarto “Serra da Estrela” é um espaço sofisticado e elegante, decorado com uma mobília de madeira de requinte que exala conforto e classe. Uma roupa de cama, em tons neutros e suaves, complementa perfeitamente o estilo requintado da mobília. O quarto conta com duas janelas amplas que oferecem uma vista privilegiada para a majestosa Serra da Estrela e o vale do Zêzere. Durante o dia, a luz natural ilumina o espaço, destacando a beleza dos móveis em madeira e criando uma atmosfera acolhedora.",
+        textBottom1:"WC | Duche | Produtos de higiene pessoal gratuitos | Toalhas | Secador de cabelo",
+        textBold1:"CASA DE BANHO:",
+        textBottom2:" Cozinha comum totalmente equipada | 2 Salas comum com lareira | Sala comum de TV | Terraço | Quintal",
+        textBold2:"POSSIBILIDADE DE UTILIZAR:",
 
         contact_us: "Contacte-nos",
         follow_us: "Visite-nos",
@@ -32,11 +29,6 @@ const translations = {
         home: "HOME",
         belmonte: "BELMONTE",
         rooms: "ROOMS",
-        room1:"ROOM",
-        room2:"ROOM",
-        room3:"ROOM",
-        room4:"ROOM",
-        room5:"ROOM",
         kitchen: "KITCHEN",
         gallery: "GALLERY",
         testimonials: "TESTIMONIALS",
@@ -44,12 +36,14 @@ const translations = {
         location: "LOCATION",
         reserve: "RESERVATIONS",
 
-        titleRoom:"Bedroom",
+        rooms:"BEDROOMS",
+        titleRoom:"Serra da Estrela Bedroom ",
         title:"ROOM | AIR CONDITIONING | SOUNDPROOFING | FREE WI-FI | AREA 46m²",
-        comodatiesBold:"FACILITIES:",
-        comodaties:" Ground floor suite, wheelchair accessible | Living area | Work area | Bed linen | Socket near the bed | Clothes rack | Extra bed (supplement)",
-        textBold:"POSSIBILITY OF USE:",
-        text:" Fully equipped common kitchen | 2 common rooms with fireplace | Common TV room | Terrace | Backyard",
+        textRoom: "The “Serra da Estrela” room is a sophisticated and elegant space, decorated with exquisite wooden furniture that exudes comfort and class. The bed linen, in neutral and soft tones, perfectly complements the refined style of the furniture. The room features two large windows that offer a privileged view of the majestic Serra da Estrela and the Zêzere valley. During the day, natural light illuminates the space, highlighting the beauty of the wooden furniture and creating a cozy atmosphere.",
+        textBottom1: "WC | Shower | Complimentary personal hygiene products | Towels | Hair dryer",
+        textBold1: "BATHROOM:",
+        textBottom2: "Fully equipped shared kitchen | 2 Common rooms with fireplace | TV lounge | Terrace | Garden",
+        textBold2: "POSSIBILITY OF USING:",
 
         contact_us: "Contact us",
         follow_us: "Visit us",
@@ -61,11 +55,6 @@ const translations = {
         home: "CASA",
         belmonte: "BELMONTE",
         rooms: "HABITACIONES",
-        room1:"HABITACIONE",
-        room2:"HABITACIONE",
-        room3:"HABITACIONE",
-        room4:"HABITACIONE",
-        room5:"HABITACIONE",
         kitchen: "COCINA",
         gallery: "GALERÍA",
         testimonials: "TESTIMONIOS",
@@ -73,12 +62,14 @@ const translations = {
         location: "UBICACIÓN",
         reserve: "RESERVAS",
 
-        titleRoom:"Habitación",
+        rooms:"HABITACIÓNES",
+        titleRoom:"Habitación Serra da Estrela",
         title:"HABITACIÓN | AIRE ACONDICIONADO | INSONORIZACIÓN | WI-FI GRATIS | ÁREA 46m²",
-        comodatiesBold:"FACILITIES:",
-        comodaties:" Suite ubicada en planta baja accesible a sillas de ruedas | Sala de estar | Escritorio | Ropa de cama | Enchufe cerca de la cama | Soporte para perchas | Cama supletoria (suplemento)",
-        textBold:"POSIBILIDAD DE USO:",
-        text:" Cocina común totalmente equipada | 2 salas comunes con chimenea | Sala de televisión común | Terraza | Patio",
+        textRoom: "La habitación « Serra da Estrela » es un espacio sofisticado y elegante, decorado con muebles de madera refinados que exudan confort y clase. La ropa de cama, en tonos neutros y suaves, complementa perfectamente el estilo refinado de los muebles. La habitación cuenta con dos ventanas grandes que ofrecen una vista privilegiada de la majestuosa Serra da Estrela y el valle del Zêzere. Durante el día, la luz natural ilumina el espacio, resaltando la belleza de los muebles de madera y creando una atmósfera acogedora.",
+        textBottom1: "WC | Ducha | Productos de higiene personal gratuitos | Toallas | Secador de pelo",
+        textBold1: "BAÑO:",
+        textBottom2: "Cocina común totalmente equipada | 2 Salones comunes con chimenea | Sala de TV | Terraza | Jardín",
+        textBold2: "POSIBILIDAD DE UTILIZAR:",
 
        
         contact_us: "Contáctenos",
@@ -91,11 +82,6 @@ const translations = {
         home: "MAISON",
         belmonte: "BELMONTE",
         rooms: "CHAMBRE",
-        room1:"CHAMBRE",
-        room2:"CHAMBRE",
-        room3:"CHAMBRE",
-        room4:"CHAMBRE",
-        room5:"CHAMBRE",
         kitchen: "CUISINE",
         gallery: "GALERIE",
         testimonials: "TÉMOIGNAGES",
@@ -104,12 +90,14 @@ const translations = {
         reserve: "RÉSERVATIONS",
         contact_us: "Contactez-nous",
 
-        titleRoom:"Chambre",
+        rooms:"CHAMBRE",
+        titleRoom:"Chambre Serra da Estrela",
         title:"CHAMBRE | CLIMATISATION | INSONORISATION | CONNEXION WI-FI GRATUITE | SUPERFICIE 46m²",
-        comodatiesBold:"COMMODITÉS:",
-        comodaties:" Suite située au rez-de-chaussée accessible aux fauteuils roulants | Surface habitable | Bureau | Linge de lit | Prise près du lit | Support de suspension | Lit supplémentaire (supplément)",
-        textBold:"POSSIBILITÉ D'UTILISATION:",
-        text:" Cuisine commune entièrement équipée | 2 salles communes avec foyer | Salle de télévision commune | Terrasse | Cour",
+        textRoom: "La chambre « Serra da Estrela » est un espace sophistiqué et élégant, décoré avec un mobilier en bois raffiné qui dégage confort et classe. Le linge de lit, dans des tons neutres et doux, complète parfaitement le style raffiné du mobilier. La chambre dispose de deux grandes fenêtres offrant une vue privilégiée sur la majestueuse Serra da Estrela et la vallée du Zêzere. Pendant la journée, la lumière naturelle illumine l'espace, mettant en valeur la beauté du mobilier en bois et créant une atmosphère accueillante.",
+        textBottom1:"WC | Douche | Produits d'hygiène personnels gratuits | Serviettes | Sèche-cheveux",
+        textBold1:"SALLE DE BAIN :",
+        textBottom2: "Cuisine commune entièrement équipée | 2 Salons communs avec cheminée | Salon TV | Terrasse | Jardin",
+        textBold2:"POSSIBILITÉ D'UTILISER :",
 
         follow_us: "Suivez-nous",
         book: "Livre des Réclamations",
@@ -122,11 +110,6 @@ const translations = {
 function setLanguage(lang) {
     document.getElementById('home').textContent = translations[lang].home;
     document.querySelector('a[href="../Belmonte/index.belmonte.html"]').textContent = translations[lang].belmonte;
-    document.querySelector('a[href="./index.quartos1.html"]').textContent = translations[lang].room1 + " 1";
-    document.querySelector('a[href="../Quartos2/index.quartos2.html"]').textContent = translations[lang].room2 + " 2";
-    document.querySelector('a[href="../Quartos3/index.quartos3.html"]').textContent = translations[lang].room3 + " 3";
-    document.querySelector('a[href="../Quartos4/index.quartos4.html"]').textContent = translations[lang].room4 + " 4";
-    document.querySelector('a[href="../Quartos5/index.quartos5.html"]').textContent = translations[lang].room5 + " 5";
     document.querySelector('a[href="../Cozinha/index.cozinha.html"]').textContent = translations[lang].kitchen;
     document.querySelector('a[href="../Galeria/index.galeria.html"]').textContent = translations[lang].gallery;
     document.querySelector('a[href="../Testemunhos/index.testemunhos.html"]').textContent = translations[lang].testimonials;
@@ -136,15 +119,15 @@ function setLanguage(lang) {
 
     // Atualizar o texto da seção principal
     document.getElementById('rooms').textContent = translations[lang].rooms;
-    document.getElementById('titleRoom').textContent = translations[lang].titleRoom + " 1";
+    document.getElementById('titleRoom').textContent = translations[lang].titleRoom;
     document.getElementById('title').textContent = translations[lang].title ;
-    document.getElementById('comodaties').innerHTML = '<strong>' + translations[lang].comodatiesBold + '</strong> ' + translations[lang].comodaties;
-    document.getElementById('text').innerHTML = '<strong>' + translations[lang].textBold + '</strong> ' + translations[lang].text;
+    document.getElementById('textRoom').textContent = translations[lang].textRoom;
+    document.getElementById('textBottom1').innerHTML = '<strong>' + translations[lang].textBold1 + '</strong> ' + translations[lang].textBottom1;
+    document.getElementById('textBottom2').innerHTML = '<strong>' + translations[lang].textBold2 + '</strong> ' + translations[lang].textBottom2;
 
 
 
     
-
     // Atualizar o footer
     document.getElementById('contact_us').textContent = translations[lang].contact_us;
     document.getElementById('follow_us').textContent = translations[lang].follow_us;
@@ -164,7 +147,6 @@ function changeLanguage(language) {
         console.error(`Language ${language} not found!`);
         return; // Exit the function if the language is not valid
     }
-
     // Save the language selection in localStorage
     localStorage.setItem('selectedLanguage', language);
 

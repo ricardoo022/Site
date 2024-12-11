@@ -167,9 +167,9 @@ body {
     padding-top: 2%;
     padding-bottom: 2%;
     border-radius: 8px;
+    text-align: justify;
     /*
     font-size: 18px;
-    text-align: justify;
     line-height: 2;
     letter-spacing: 1.5px;
     text-overflow: ellipsis;
