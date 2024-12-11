@@ -1,0 +1,703 @@
+/*Header*/
+
+.nav-link.active {
+    border-bottom: 2px solid #000;
+    padding-bottom: 4px;
+}
+
+body {
+    padding-top: 80px; /* Ajustado para reduzir a altura da navbar */
+}
+
+.navbar {
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+    position: absolute;
+    width: 100%;
+}
+
+.navbar.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar.scrolled {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item :hover {
+    color: #f0ca8c;
+}
+
+.navbar-nav {
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.home-button {
+    background-color: #010101;
+    color: white;
+    border: none;
+    padding: 8px 16px; /* Reduzido para mobile */
+    font-size: 14px;
+    border-radius: 6px; /* Reduzido para mobile */
+    text-align: center;
+    cursor: pointer;
+}
+
+.navbar-brand, .nav-link, .dropdown-item {
+    font-size:1rem; 
+}
+.nav-item {
+    margin: 2px 15px; /* Espaçamento vertical uniforme para todos os itens */
+}
+
+.dropdown .dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 3px 0;
+    margin: 0;
+    z-index: 1000;
+    width: 300px; /* Adjust the width of the dropdown menu */
+}
+
+.dropdown .dropdown-menu li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown .dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+.dropdown .dropdown-menu a {
+    padding: 10px 20px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown .dropdown-menu a:hover {
+    color: #d8a85c;
+    background-color: #ffffff;
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+    .nav-item {
+        margin: 1px 0; /* Espaçamento vertical uniforme para todos os itens */
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-brand img {
+        height: 50px; /* Redução do logo no mobile */
+    }
+
+    .home-button {
+        padding: 6px 12px;
+        font-size: 24px; /* Fonte reduzida para mobile */
+    }
+
+    .dropdown .dropdown-menu {
+        width: 200px; /* Redução de largura no mobile */
+    }
+
+    .navbar-brand, .nav-link, .dropdown-item {
+        font-size: 1rem; /* Redução adicional para mobile */
+    }
+    .nav-link.active {
+        border-bottom: 2px solid #000;
+        padding-bottom: 4px;
+        width: fit-content; /* Para que o comprimento da linha preta seja apenas o suficiente para o texto */
+        margin: 0 auto; /* Centraliza a linha preta */
+    }
+        /* Centraliza os itens do dropdown */
+    .dropdown .dropdown-menu {
+        display: none; /* Oculto por padrão */
+        text-align: center; /* Centraliza o texto */
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%); /* Centraliza horizontalmente o dropdown */
+        width: 250px; /* Ajuste a largura conforme necessário */
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block; /* Mostra o menu ao passar o mouse */
+    }
+
+}
+
+/**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo do formulário de reserva */
+.booking-form {
+    background: #ffffff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    max-width: 300px; /* Tamanho reduzido do formulário */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 30%; /* Padding superior em relação à imagem */
+    right: 5%; /* Distância do lado direito */
+    transform: translateY(-18%); /* Centraliza verticalmente */
+    z-index: 10; /* Mantém o formulário acima da imagem */
+}
+
+/* Ajusta o título do formulário */
+.booking-form h3 {
+    color: #19191a;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Estilos para os campos de data */
+.booking-form .check-date {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+
+
+.booking-form .check-date input {
+    width: calc(100% - 30px); /* Ajusta a largura para o ícone */
+    height: 40px;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #19191a;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-left: 15px;
+    position: relative;
+}
+
+/* Estilos para as opções selecionadas */
+.booking-form .select-option {
+    margin-bottom: 10px;
+}
+
+.booking-form .select-option label {
+    font-size: 17px;
+    color: #707079;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.booking-form .select-option select {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    font-size: 14px;
+    padding-left: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* Estilos para o botão */
+.booking-form button {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: white;
+    font-weight: 500;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 40px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.booking-form button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .booking-form {
+        background: #ffffff;
+        padding: 15px 20px;
+        border-radius: 8px;
+        max-width: 200px; /* Tamanho reduzido do formulário */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 25%; /* Padding superior em relação à imagem */
+        right: 5%; /* Distância do lado direito */
+        transform: translateX(-50%); /* Centraliza verticalmente */
+
+        z-index: 10; /* Mantém o formulário acima da imagem */
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Carrousel */
+@media (max-width: 600px) {
+    #myCarousel {
+        height: 700px;
+    }
+    .d-block {
+        height: 700px;
+        width: 100%;
+        object-fit: cover; 
+    }
+}
+
+/*Divisão*/
+#divisao{
+    padding-top: 4%;
+}
+.titulo{
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-left:20%;
+    margin-right:20%; 
+
+    letter-spacing: 1px; 
+    border-bottom: 2px solid #f0a500; 
+    padding-bottom: 1%;
+
+    font-size: 200%; 
+    font-weight: bold; 
+    color: #333; 
+    text-align: center; 
+    text-transform: uppercase; 
+
+}
+
+@media (max-width: 600px) {
+    .titulo{
+        font-size: 25px; 
+        padding-top: 30px;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-left:10%;
+        margin-right:10%; 
+        padding-bottom: 2%;
+    }
+
+}
+
+/*Fotos & Texto*/
+.img1{
+    padding-bottom: 4%;
+}
+#texto{
+    padding-top: 5%;
+}
+.foto1{
+    padding-left: 8%;
+    
+}
+.text{
+    padding-right: 10%;
+    padding-left: 10%;
+    font-family:'Playfair Display', serif;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 2;
+    letter-spacing: 1.5px;
+    text-overflow: ellipsis;
+    color: #333;
+}
+
+.text1{
+    padding-left: 12%;
+}
+
+.foto2{
+    padding-left: 0%;
+    padding-right: 7%;
+    padding-bottom: 1%;
+}
+
+@media (max-width: 600px) {
+    .foto{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .text{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+}
+.drop-cap {
+    font-size: 4em; /* Tamanho grande para o efeito de capitular */
+    float: left; /* Alinha a letra à esquerda do parágrafo */
+    line-height: 0.8; /* Ajusta o alinhamento vertical */
+    margin-right: 10px; /* Espaço entre a letra e o texto */
+    font-family:'Playfair Display', serif; /* Fonte clássica para um toque vintage */
+    color: #333; /* Cor escura para um toque clássico */
+}
+
+
+/*Icones*/
+
+.icones {
+    display: flex;
+    justify-content: space-between; /* Espaçamento igual entre os ícones */
+    padding: 0 10%; /* Espaçamento lateral simétrico */
+}
+
+.icones > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o ícone e o texto */
+    justify-content: center;
+    flex-grow: 1; /* Faz com que cada ícone cresça igualmente */
+    margin: 0 2%; /* Espaçamento lateral entre os ícones */
+}
+
+.social-icon {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
+
+.texto-icones {
+    text-align: center;
+    margin-top: 10px; /* Espaço entre o ícone e o texto */
+    padding: 0; /* Remover padding desnecessário */
+}
+
+#icones-texto {
+    padding-bottom: 4%;
+}
+
+
+
+/*Quartos*/
+#quarto .image-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3; /* Mantém a mesma proporção para todas as imagens */
+}
+
+#quarto .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#quarto .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-shadow: 0 0 8px rgba(252, 252, 252, 0.8);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#quarto .image-container:hover img {
+    filter: brightness(50%);
+
+}
+
+#quarto .image-container:hover .text-overlay {
+    opacity: 1;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Três colunas iguais */
+    gap: 2.5rem; /* Gap reduzido para layout mais compacto */
+    padding: 0 10px; /* Reduz o padding lateral */
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        gap: 2rem; /* Aumenta o espaço entre as fotos para monitores grandes */
+    }
+
+    #quarto .image-container {
+        aspect-ratio: 16 / 9; /* Fotos mais largas em monitores maiores */
+    }
+
+    .img-cozinha {
+        height: auto; /* Mantém a imagem da cozinha proporcional */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*Sala de estar*/
+.galeria {
+    position: relative;
+    width: 1200px; /* Tamanho das imagens */
+    margin: 50px auto;
+}
+
+.imagem {
+    display: none;
+    padding: 10px; /* Espaço interno ao redor da imagem */
+    background-color: #f0f0f0; /* Cor de fundo para criar o retângulo */
+    border: 2px solid #ccc; /* Borda do retângulo */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+.imagem img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Ajuste para borda da imagem dentro do retângulo */
+}
+
+.imagem.active {
+    display: block;
+}
+
+.indicadores {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.indicador {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.indicador.active {
+    background-color: #007BFF;
+}
+
+.indicador:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+/* Estilos globais já aplicados em todo o site */
+
+footer {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    color: #333;
+    font-family: 'Arial', sans-serif; /* Uniformiza a fonte */
+    border-top: 2px solid #ddd;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo1 img {
+    max-width: 220px;
+}
+
+.contact, .follow, .logo1 {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.contact, .follow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact h3, .follow h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact li .icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.follow .social-icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.social-icons a .social-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.complaint-logo {
+    max-width: 180px;
+    height: auto;
+}
+
+#footer {
+    padding-top: 5%;
+}
+
+.footer-bottom {
+    background-color: #f9f9f9;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    border-top: 1px solid #ccc;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom a {
+    color: #0077b6;
+    text-decoration: none;
+}
+.reclamacoes {
+    margin-top: 20px; /* Espaçamento entre o "Livro de Reclamações" e as redes sociais */
+}
+
+/* Estilos Específicos para Mobile */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo1 {
+        display: none; /* Oculta o logo no mobile */
+    }
+    .contact li {
+        justify-content: center; /* Centraliza os ícones e o texto dos contactos */
+    }
+
+    .contact, .follow {
+        align-items: center; /* Centraliza o conteúdo no mobile */
+        text-align: center; /* Centraliza o texto no mobile */
+    }
+
+    /* Aumenta o padding entre os logos das redes sociais e o "Livro de Reclamações" */
+    .reclamacoes {
+        margin-top: px; /* Espaçamento entre o "Livro de Reclamações" e as redes sociais */
+    }
+
+    .follow .social-icons {
+        margin-bottom: 30px; /* Aumenta o espaço entre os ícones sociais e o "Livro de Reclamações" */
+    }
+}

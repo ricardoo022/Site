@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A casa-Casa NOME</title>
+
+    <link rel="icon" href="" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./estilos.galeria.css">
+    
+    <body>  
+         <!-- Header -->
+         <header>
+            <div class="language-selector">
+                <a href="#" onclick="changeLanguage('pt')">PT</a>
+                <a href="#" onclick="changeLanguage('en')">EN</a>
+                <a href="#" onclick="changeLanguage('es')">ES</a>
+                <a href="#" onclick="changeLanguage('fr')">FR</a>
+            </div>
+    
+        </header>
+
+        <section id="header">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand logo" href="../main/index.main.html">
+                        <img src="../Fotos/Logotipo.png" alt="Logotipo" height="80">
+                    </a>
+            
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link  header-text" href="../main/index.main.html" id="home">CASA</a></li>
+                            <li class="nav-item"><a class="nav-link   header-text" href="../Belmonte/index.belmonte.html" id="belmonte">BELMONTE</a></li>
+                            <li class="dropdown">
+                                <a class="nav-link dropdown-toggle nav-item " role="button" data-bs-toggle="dropdown" aria-expanded="false" id="rooms">QUARTOS</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item header-text" href="../Quartos1/index.quartos1.html" id="room1">QUARTO 1</a></li>
+                                    <li><a class="dropdown-item header-text" href="../Quartos2/index.quartos2.html" id="room2">QUARTO 2</a></li>
+                                    <li><a class="dropdown-item header-text" href="../Quartos3/index.quartos3.html" id="room3">QUARTO 3</a></li>
+                                    <li><a class="dropdown-item header-text" href="../Quartos4/index.quartos4.html" id="room4">QUARTO 4</a></li>
+                                    <li><a class="dropdown-item header-text" href="../Quartos5/index.quartos5.html" id="room5">QUARTO 5</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link  header-text" href="../Cozinha/index.cozinha.html" id="kitchen">COZINHA</a></li>
+                            <li class="nav-item"><a class="nav-link active header-text" href="./index.galeria.html" id="gallery">GALERIA</a></li>
+                            <li class="nav-item"><a class="nav-link  header-text" href="../Testemunhos/index.testemunhos.html" id="testimonials">TESTEMUNHOS</a></li>
+                            <li class="nav-item"><a class="nav-link  header-text" href="../Contactos/index.contactos.html" id="contacts">CONTACTOS</a></li>
+                            <li class="nav-item"><a class="nav-link  header-text" href="../Como chegar/index.chegar.html" id="location">LOCALIZAÇÃO</a></li>
+                        </ul>
+                        <div class="nav-item">
+                            <a href="../Reservar/index.reservar.html" class="nav-link home-button header-text" id="reserve">RESERVAS</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>            
+        </section>
+
+        <!-- Titulo -->
+        <section id="titulo-testemunhos">
+            <div class="division">
+                <h3 class="titulo">GALERIA</h3>
+            </div>
+        </section>
+
+        <!-- Custom Row with Images -->
+        <div class="custom-row">
+            <div class="custom-column img_principal">
+                <img src="../Fotos/img.jpg" class=" cursor" onclick="openModal();currentSlide(1)" style="width:100%">
+            </div>
+            <div class="custom-column img_principal">
+                <img src="../Fotos/img.jpg" class=" cursor" onclick="openModal();currentSlide(2)" style="width:100%">
+            </div>
+            <div class="custom-column img_principal">
+                <img src="../Fotos/img.jpg" class=" cursor" onclick="openModal();currentSlide(3)" style="width:100%">
+            </div>
+            <div class="custom-column img_principal">
+                <img src="../Fotos/img.jpg" class=" cursor" onclick="openModal();currentSlide(4)" style="width:100%">
+            </div>
+            <div class="custom-column img_principal">
+                <img src="../Fotos/img.jpg" class=" cursor" onclick="openModal();currentSlide(5)" style="width:100%">
+            </div>
+            <div class="custom-column img_principal">
+                <img src="../Fotos/img.jpg" class=" cursor" onclick="openModal();currentSlide(6)" style="width:100%">
+            </div>
+            <div class="custom-column img_principal">
+                <img src="../Fotos/img.jpg" class=" cursor" onclick="openModal();currentSlide(7)" style="width:100%">
+            </div>
+            <div class="custom-column img_principal">
+                <img src="../Fotos/img.jpg" class=" cursor" onclick="openModal();currentSlide(8)" style="width:100%">
+            </div>
+            <div class="custom-column img_principal">
+                <img src="../Fotos/img.jpg" class=" cursor" onclick="openModal();currentSlide(9)" style="width:100%">
+            </div>
+            <div class="custom-column img_principal">
+                <img src="../Fotos/img.jpg" class=" cursor" onclick="openModal();currentSlide(10)" style="width:100%">
+            </div>
+            <div class="custom-column img_principal">
+                <img src="../Fotos/img.jpg" class=" cursor" onclick="openModal();currentSlide(11)" style="width:100%">
+            </div>
+            <div class="custom-column img_principal">
+                <img src="../Fotos/img.jpg" class=" cursor" onclick="openModal();currentSlide(12)" style="width:100%">
+            </div>
+        </div>
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="lightbox-modal">
+            <span class="lightbox-close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 12</div>
+                    <img src="../Fotos/img.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 12</div>
+                    <img src="../Fotos/img.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 12</div>
+                    <img src="../Fotos/img.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 12</div>
+                    <img src="../Fotos/img.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 12</div>
+                    <img src="../Fotos/img.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 12</div>
+                    <img src="../Fotos/img.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">7 / 12</div>
+                    <img src="../Fotos/img.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">8 / 12</div>
+                    <img src="../Fotos/img.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">9 / 12</div>
+                    <img src="../Fotos/img.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">10 / 12</div>
+                    <img src="../Fotos/img.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">11 / 12</div>
+                    <img src="../Fotos/img.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">12 / 12</div>
+                    <img src="../Fotos/img.jpg" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnails -->
+                <div class="custom-row">
+                    <div class="custom-column">
+                        <img class="demo cursor" src="../Fotos/img.jpg" style="width:100%" onclick="currentSlide(1)" alt="Image 1">
+                    </div>
+                    <div class="custom-column">
+                        <img class="demo cursor" src="../Fotos/img.jpg" style="width:100%" onclick="currentSlide(2)" alt="Image 2">
+                    </div>
+                    <div class="custom-column">
+                        <img class="demo cursor" src="../Fotos/img.jpg" style="width:100%" onclick="currentSlide(3)" alt="Image 3">
+                    </div>
+                    <div class="custom-column">
+                        <img class="demo cursor" src="../Fotos/img.jpg" style="width:100%" onclick="currentSlide(4)" alt="Image 4">
+                    </div>
+                    <div class="custom-column">
+                        <img class="demo cursor" src="../Fotos/img.jpg" style="width:100%" onclick="currentSlide(5)" alt="Image 5">
+                    </div>
+                    <div class="custom-column">
+                        <img class="demo cursor" src="../Fotos/img.jpg" style="width:100%" onclick="currentSlide(6)" alt="Image 6">
+                    </div>
+                    <div class="custom-column">
+                        <img class="demo cursor" src="../Fotos/img.jpg" style="width:100%" onclick="currentSlide(7)" alt="Image 7">
+                    </div>
+                    <div class="custom-column">
+                        <img class="demo cursor" src="../Fotos/img.jpg" style="width:100%" onclick="currentSlide(8)" alt="Image 8">
+                    </div>
+                    <div class="custom-column">
+                        <img class="demo cursor" src="../Fotos/img.jpg" style="width:100%" onclick="currentSlide(9)" alt="Image 9">
+                    </div>
+                    <div class="custom-column">
+                        <img class="demo cursor" src="../Fotos/img.jpg" style="width:100%" onclick="currentSlide(10)" alt="Image 10">
+                    </div>
+                    <div class="custom-column">
+                        <img class="demo cursor" src="../Fotos/img.jpg" style="width:100%" onclick="currentSlide(11)" alt="Image 11">
+                    </div>
+                    <div class="custom-column">
+                        <img class="demo cursor" src="../Fotos/img.jpg" style="width:100%" onclick="currentSlide(12)" alt="Image 12">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+
+        <script>
+        function openModal() {
+        document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+
+    
+
+        <!-- Footer -->
+        <section id="footer">
+            <footer>
+                <div class="footer-container">
+                    <div class="logo1">
+                        <img src="../Fotos/Logotipo.png" alt="Borcelle Studio Logo">
+                    </div>
+                    <div class="contact">
+                        <h3 id="contact_us">Contacte-nos</h3>
+                        <ul>
+                            <li>
+                                <img src="../Fotos/location.png" alt="Localização" class="icon">
+                                <span>Largo Dr. António José de Almeida</span>
+                            </li>
+                            <li>
+                                <img src="../Fotos/phone.png" alt="Tel" class="icon">
+                                <span>+351 999 333 333</span>
+                            </li>
+                            <li>
+                                <img src="../Fotos/email.png" alt="email" class="icon">
+                                <span>hello@domain.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="follow">
+                        <h3 id="follow_us">Visite-nos</h3>
+                        <div class="social-icons">
+                            <a href="#">
+                                <img src="../Fotos/facebook.png" alt="Facebook" class="social-icon">
+                            </a>
+                            <a href="#">
+                                <img src="../Fotos/instagram.png" alt="Instagram" class="social-icon">
+                            </a>
+                            <a href="#">
+                                <img src="../Fotos/airbnb.png" alt="Airbnb" class="social-icon">
+                            </a>
+                            <a href="#">
+                                <img src="../Fotos/booking.png" alt="Booking" class="social-icon">
+                            </a>
+                        </div>
+                            <a  >
+                                <h3 class="reclamacoes" id="book">Livro de Reclamações</h3>
+                                    <img src="../Fotos/reclamacoes.png" alt="Livro de Reclamações" class="complaint-logo" >
+                                </h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+        
+        <div class="footer-bottom">
+            <p id="polites1">Concept by SalesUp © Copyright - Active Up. Todos os direitos reservados.</p>
+            <a href="#" id="polites2">Política de Privacidade</a>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    
+        <script src="transl.gal.js"></script>
+
+    </body>
+</html>
+    
+    
+
+
+
