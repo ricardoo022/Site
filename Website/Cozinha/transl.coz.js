@@ -2,19 +2,13 @@ const translations = {
     pt: {
         home: "CASA",
         belmonte: "BELMONTE",
-        rooms: "QUARTOS",
-        room1:"QUARTO",
-        room2:"QUARTO",
-        room3:"QUARTO",
-        room4:"QUARTO",
-        room5:"QUARTO",
         kitchen: "COZINHA",
         gallery: "GALERIA",
         testimonials: "TESTEMUNHOS",
         contacts: "CONTACTOS",
         location: "LOCALIZAÇÃO",
         reserve: "RESERVAS",
-       
+        rooms:"QUARTOS",
         text_tittle:"A nossa cozinha está super bem equipada e à disposição dos nossos hospedes com:",
         text1:"Frigorífico/Congelador",
         text2:"Fogão a Gás/Forno elétrico",
@@ -32,12 +26,7 @@ const translations = {
     en: {
         home: "HOME",
         belmonte: "BELMONTE",
-        rooms: "ROOMS",
-        room1:"ROOM",
-        room2:"ROOM",
-        room3:"ROOM",
-        room4:"ROOM",
-        room5:"ROOM",
+        rooms:"ROOMS",
         kitchen: "KITCHEN",
         gallery: "GALLERY",
         testimonials: "TESTIMONIALS",
@@ -62,19 +51,13 @@ const translations = {
     es: {
         home: "CASA",
         belmonte: "BELMONTE",
-        rooms: "HABITACIONES",
-        room1:"HABITACIONE",
-        room2:"HABITACIONE",
-        room3:"HABITACIONE",
-        room4:"HABITACIONE",
-        room5:"HABITACIONE",
         kitchen: "COCINA",
         gallery: "GALERÍA",
         testimonials: "TESTIMONIOS",
         contacts: "CONTACTOS",
         location: "UBICACIÓN",
         reserve: "RESERVAS",
-     
+        rooms:"HABITACIONES",
         text_tittle:"Nuestra cocina está súper bien equipada y disponible para nuestros huéspedes con:",
         text1:"Nevera/Congelador",
         text2:"Estufa a gas/horno eléctrico",
@@ -93,19 +76,13 @@ const translations = {
     fr: {
         home: "MAISON",
         belmonte: "BELMONTE",
-        rooms: "CHAMBRE",
-        room1:"CHAMBRE",
-        room2:"CHAMBRE",
-        room3:"CHAMBRE",
-        room4:"CHAMBRE",
-        room5:"CHAMBRE",
         kitchen: "CUISINE",
         gallery: "GALERIE",
         testimonials: "TÉMOIGNAGES",
         contacts: "CONTACTS",
         location: "EMPLACEMENT",
         reserve: "RÉSERVATIONS",
-        
+        rooms:"CHAMBRES",
         text_tittle:"Notre cuisine est super bien équipée et à disposition de nos hôtes avec :",
         text1:"Réfrigérateur/Congélateur",
         text2:"Cuisinière à gaz/Four électrique",
@@ -126,11 +103,6 @@ const translations = {
 function setLanguage(lang) {
     document.getElementById('home').textContent = translations[lang].home;
     document.querySelector('a[href="../Belmonte/index.belmonte.html"]').textContent = translations[lang].belmonte;
-    document.querySelector('a[href="../Quartos1/index.quartos1.html"]').textContent = translations[lang].room1 + " 1";
-    document.querySelector('a[href="../Quartos2/index.quartos2.html"]').textContent = translations[lang].room2 + " 2";
-    document.querySelector('a[href="../Quartos3/index.quartos3.html"]').textContent = translations[lang].room3 + " 3";
-    document.querySelector('a[href="../Quartos4/index.quartos4.html"]').textContent = translations[lang].room4 + " 4";
-    document.querySelector('a[href="../Quartos5/index.quartos5.html"]').textContent = translations[lang].room5 + " 5";
     document.querySelector('a[href="./index.cozinha.html"]').textContent = translations[lang].kitchen;
     document.querySelector('a[href="../Galeria/index.galeria.html"]').textContent = translations[lang].gallery;
     document.querySelector('a[href="../Testemunhos/index.testemunhos.html"]').textContent = translations[lang].testimonials;

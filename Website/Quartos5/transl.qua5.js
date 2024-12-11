@@ -2,12 +2,6 @@ const translations = {
     pt: {
         home: "CASA",
         belmonte: "BELMONTE",
-        rooms: "QUARTOS",
-        room1:"QUARTO",
-        room2:"QUARTO",
-        room3:"QUARTO",
-        room4:"QUARTO",
-        room5:"QUARTO",
         kitchen: "COZINHA",
         gallery: "GALERIA",
         testimonials: "TESTEMUNHOS",
@@ -15,12 +9,16 @@ const translations = {
         location: "LOCALIZAÇÃO",
         reserve: "RESERVAS",
 
-        titleRoom:"Quarto",
+        rooms:"QUARTOS",
+        titleRoom:"Quarto Centum Cellas",
         title:"QUARTO | AR CONDICIONADO | INSONORIZAÇÃO | WI-FI GRATUITO | ÁREA 46m²",
-        comodatiesBold:"COMODIDADES:",
-        comodaties:" Suite situada no piso térreo acessível a cadeira de rodas | Área de estar | Área de trabalho | Roupa de Cama | Tomada perto da cama | Suporte para cabides | Cama extra (suplemento)",
-        textBold:"POSSIBILIDADE DE UTILIZAR:",
-        text:" Cozinha comum totalmente equipada | 2 Salas comum com lareira | Sala comum de TV | Terraço | Quintal",
+        textRoom:"O quarto “Centum Cellas”, é um espaço charmoso e confortável que combina simplicidade e aconchego. Com duas janelas amplas viradas para o centro da vila, oferece uma vista pitoresca das ruas históricas e dos telhados típicos de Belmonte. A luz natural que entra pelas janelas ilumina suavemente o ambiente durante o dia, criando uma atmosfera acolhedora e arejada.",
+        textRoom2:"O quarto é decorado com tons neutros e detalhes em madeira, refletindo o estilo tradicional da região, mas com um toque de modernidade. A cama é espaçosa e confortável, coberta com roupa de cama macia e convidativa. Nas laterais, mesas de cabeceira simples, com luminárias que permitem uma iluminação mais suave para momentos de leitura.",
+        textRoom3:"Para complementar, o quarto Centum Cellas possui um pequeno armário de madeira, ideal para acomodar roupas e objetos pessoais, com comoda, duas cadeiras de apoio. É um espaço que transmite calma e se integra harmoniosamente com o ambiente histórico e cultural.",
+        textBottom1:"WC | Duche | Produtos de higiene pessoal gratuitos | Toalhas | Secador de cabelo",
+        textBold1:"CASA DE BANHO:",
+        textBottom2:" Cozinha comum totalmente equipada | 2 Salas comum com lareira | Sala comum de TV | Terraço | Quintal",
+        textBold2:"POSSIBILIDADE DE UTILIZAR:",
 
         contact_us: "Contacte-nos",
         follow_us: "Visite-nos",
@@ -31,12 +29,6 @@ const translations = {
     en: {
         home: "HOME",
         belmonte: "BELMONTE",
-        rooms: "ROOMS",
-        room1:"ROOM",
-        room2:"ROOM",
-        room3:"ROOM",
-        room4:"ROOM",
-        room5:"ROOM",
         kitchen: "KITCHEN",
         gallery: "GALLERY",
         testimonials: "TESTIMONIALS",
@@ -44,12 +36,16 @@ const translations = {
         location: "LOCATION",
         reserve: "RESERVATIONS",
 
-        titleRoom:"Bedroom",
+        rooms:"ROOMS",
+        titleRoom:"Room Centum Cellas",
         title:"ROOM | AIR CONDITIONING | SOUNDPROOFING | FREE WI-FI | AREA 46m²",
-        comodatiesBold:"FACILITIES:",
-        comodaties:" Ground floor suite, wheelchair accessible | Living area | Work area | Bed linen | Socket near the bed | Clothes rack | Extra bed (supplement)",
-        textBold:"POSSIBILITY OF USE:",
-        text:" Fully equipped common kitchen | 2 common rooms with fireplace | Common TV room | Terrace | Backyard",
+        textRoom:"The room “Centum Cellas” is a charming and comfortable space that combines simplicity and coziness. With two large windows facing the village center, it offers a picturesque view of the historic streets and typical rooftops of Belmonte. The natural light entering through the windows softly illuminates the room during the day, creating a welcoming and airy atmosphere.",
+        textRoom2:"The room is decorated with neutral tones and wooden details, reflecting the traditional style of the region, but with a touch of modernity. The bed is spacious and comfortable, covered with soft and inviting bedding. On the sides, simple bedside tables with lamps allow softer lighting for reading moments.",
+        textRoom3:"To complement, the Centum Cellas room has a small wooden wardrobe, ideal for storing clothes and personal items, with a chest of drawers and two support chairs. It is a space that conveys calm and integrates harmoniously with the historical and cultural environment.",
+        textBottom1:"WC | Shower | Free toiletries | Towels | Hairdryer",
+        textBold1:"BATHROOM:",
+        textBottom2:" Fully equipped shared kitchen | 2 Shared lounges with fireplace | Shared TV room | Terrace | Backyard",
+        textBold2:"USAGE POSSIBILITIES:",
 
         contact_us: "Contact us",
         follow_us: "Visit us",
@@ -60,12 +56,6 @@ const translations = {
     es: {
         home: "CASA",
         belmonte: "BELMONTE",
-        rooms: "HABITACIONES",
-        room1:"HABITACIONE",
-        room2:"HABITACIONE",
-        room3:"HABITACIONE",
-        room4:"HABITACIONE",
-        room5:"HABITACIONE",
         kitchen: "COCINA",
         gallery: "GALERÍA",
         testimonials: "TESTIMONIOS",
@@ -73,12 +63,16 @@ const translations = {
         location: "UBICACIÓN",
         reserve: "RESERVAS",
 
-        titleRoom:"Habitación",
-        title:"HABITACIÓN | AIRE ACONDICIONADO | INSONORIZACIÓN | WI-FI GRATIS | ÁREA 46m²",
-        comodatiesBold:"FACILITIES:",
-        comodaties:" Suite ubicada en planta baja accesible a sillas de ruedas | Sala de estar | Escritorio | Ropa de cama | Enchufe cerca de la cama | Soporte para perchas | Cama supletoria (suplemento)",
-        textBold:"POSIBILIDAD DE USO:",
-        text:" Cocina común totalmente equipada | 2 salas comunes con chimenea | Sala de televisión común | Terraza | Patio",
+        rooms:"HABITACIONES",
+        titleRoom:"Habitación Centum Cellas",
+        title:"HABITACIÓN | AIRE ACONDICIONADO | INSONORIZACIÓN | WI-FI GRATUITO | ÁREA 46m²",
+        textRoom:"La habitación “Centum Cellas” es un espacio encantador y cómodo que combina simplicidad y calidez. Con dos grandes ventanas orientadas al centro del pueblo, ofrece una vista pintoresca de las calles históricas y los tejados típicos de Belmonte. La luz natural que entra por las ventanas ilumina suavemente el ambiente durante el día, creando una atmósfera acogedora y aireada.",
+        textRoom2:"La habitación está decorada con tonos neutros y detalles de madera, reflejando el estilo tradicional de la región, pero con un toque de modernidad. La cama es espaciosa y cómoda, cubierta con ropa de cama suave y acogedora. A los lados, mesitas de noche simples con lámparas permiten una iluminación más suave para momentos de lectura.",
+        textRoom3:"Para complementar, la habitación Centum Cellas cuenta con un pequeño armario de madera, ideal para guardar ropa y objetos personales, con una cómoda y dos sillas de apoyo. Es un espacio que transmite calma y se integra armoniosamente con el entorno histórico y cultural.",
+        textBottom1:"WC | Ducha | Artículos de tocador gratuitos | Toallas | Secador de pelo",
+        textBold1:"BAÑO:",
+        textBottom2:" Cocina compartida totalmente equipada | 2 Salas comunes con chimenea | Sala común de TV | Terraza | Patio trasero",
+        textBold2:"POSIBILIDAD DE USO:",
 
        
         contact_us: "Contáctenos",
@@ -90,12 +84,6 @@ const translations = {
     fr: {
         home: "MAISON",
         belmonte: "BELMONTE",
-        rooms: "CHAMBRE",
-        room1:"CHAMBRE",
-        room2:"CHAMBRE",
-        room3:"CHAMBRE",
-        room4:"CHAMBRE",
-        room5:"CHAMBRE",
         kitchen: "CUISINE",
         gallery: "GALERIE",
         testimonials: "TÉMOIGNAGES",
@@ -104,12 +92,16 @@ const translations = {
         reserve: "RÉSERVATIONS",
         contact_us: "Contactez-nous",
 
-        titleRoom:"Chambre",
-        title:"CHAMBRE | CLIMATISATION | INSONORISATION | CONNEXION WI-FI GRATUITE | SUPERFICIE 46m²",
-        comodatiesBold:"COMMODITÉS:",
-        comodaties:" Suite située au rez-de-chaussée accessible aux fauteuils roulants | Surface habitable | Bureau | Linge de lit | Prise près du lit | Support de suspension | Lit supplémentaire (supplément)",
-        textBold:"POSSIBILITÉ D'UTILISATION:",
-        text:" Cuisine commune entièrement équipée | 2 salles communes avec foyer | Salle de télévision commune | Terrasse | Cour",
+        rooms:"CHAMBRES",
+        titleRoom:"Chambre Centum Cellas",
+        title:"CHAMBRE | CLIMATISATION | INSONORISATION | WI-FI GRATUIT | SUPERFICIE 46m²",
+        textRoom:"La chambre “Centum Cellas” est un espace charmant et confortable qui combine simplicité et convivialité. Avec deux grandes fenêtres donnant sur le centre du village, elle offre une vue pittoresque des rues historiques et des toits typiques de Belmonte. La lumière naturelle qui entre par les fenêtres illumine doucement la pièce pendant la journée, créant une atmosphère chaleureuse et aérée.",
+        textRoom2:"La chambre est décorée avec des tons neutres et des détails en bois, reflétant le style traditionnel de la région, mais avec une touche de modernité. Le lit est spacieux et confortable, couvert de draps doux et invitants. Sur les côtés, des tables de chevet simples avec des lampes permettent un éclairage plus doux pour les moments de lecture.",
+        textRoom3:"Pour compléter, la chambre Centum Cellas dispose d’une petite armoire en bois, idéale pour ranger des vêtements et des objets personnels, avec une commode et deux chaises de soutien. C’est un espace qui inspire le calme et s’intègre harmonieusement dans l’environnement historique et culturel.",
+        textBottom1:"WC | Douche | Articles de toilette gratuits | Serviettes | Sèche-cheveux",
+        textBold1:"SALLE DE BAIN:",
+        textBottom2:" Cuisine commune entièrement équipée | 2 Salles communes avec cheminée | Salle commune de TV | Terrasse | Cour",
+        textBold2:"POSSIBILITÉS D’UTILISATION:",
 
         follow_us: "Suivez-nous",
         book: "Livre des Réclamations",
@@ -122,11 +114,6 @@ const translations = {
 function setLanguage(lang) {
     document.getElementById('home').textContent = translations[lang].home;
     document.querySelector('a[href="../Belmonte/index.belmonte.html"]').textContent = translations[lang].belmonte;
-    document.querySelector('a[href="../Quartos1/index.quartos1.html"]').textContent = translations[lang].room1 + " 1";
-    document.querySelector('a[href="../Quartos2/index.quartos2.html"]').textContent = translations[lang].room2 + " 2";
-    document.querySelector('a[href="../Quartos3/index.quartos3.html"]').textContent = translations[lang].room3 + " 3";
-    document.querySelector('a[href="../Quartos4/index.quartos4.html"]').textContent = translations[lang].room4 + " 4";
-    document.querySelector('a[href="./index.quartos5.html"]').textContent = translations[lang].room5 + " 5";
     document.querySelector('a[href="../Cozinha/index.cozinha.html"]').textContent = translations[lang].kitchen;
     document.querySelector('a[href="../Galeria/index.galeria.html"]').textContent = translations[lang].gallery;
     document.querySelector('a[href="../Testemunhos/index.testemunhos.html"]').textContent = translations[lang].testimonials;
@@ -136,15 +123,17 @@ function setLanguage(lang) {
 
     // Atualizar o texto da seção principal
     document.getElementById('rooms').textContent = translations[lang].rooms;
-    document.getElementById('titleRoom').textContent = translations[lang].titleRoom + " 5";
-    document.getElementById('title').textContent = translations[lang].title ;
-    document.getElementById('comodaties').innerHTML = '<strong>' + translations[lang].comodatiesBold + '</strong> ' + translations[lang].comodaties;
-    document.getElementById('text').innerHTML = '<strong>' + translations[lang].textBold + '</strong> ' + translations[lang].text;
+    document.getElementById('titleRoom').textContent = translations[lang].titleRoom;
+    document.getElementById('title').textContent = translations[lang].title;
+    document.getElementById('textRoom').textContent = translations[lang].textRoom;
+    document.getElementById('textRoom2').textContent = translations[lang].textRoom2;
+    document.getElementById('textRoom3').textContent = translations[lang].textRoom3;
+    document.getElementById('textBottom1').innerHTML = '<strong>' + translations[lang].textBold1 + '</strong> ' + translations[lang].textBottom1;
+    document.getElementById('textBottom2').innerHTML = '<strong>' + translations[lang].textBold2 + '</strong> ' + translations[lang].textBottom2;
 
 
 
     
-
     // Atualizar o footer
     document.getElementById('contact_us').textContent = translations[lang].contact_us;
     document.getElementById('follow_us').textContent = translations[lang].follow_us;

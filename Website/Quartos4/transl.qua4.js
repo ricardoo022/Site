@@ -2,12 +2,6 @@ const translations = {
     pt: {
         home: "CASA",
         belmonte: "BELMONTE",
-        rooms: "QUARTOS",
-        room1:"QUARTO",
-        room2:"QUARTO",
-        room3:"QUARTO",
-        room4:"QUARTO",
-        room5:"QUARTO",
         kitchen: "COZINHA",
         gallery: "GALERIA",
         testimonials: "TESTEMUNHOS",
@@ -15,12 +9,16 @@ const translations = {
         location: "LOCALIZAÇÃO",
         reserve: "RESERVAS",
 
-        titleRoom:"Quarto",
+        rooms:"QUARTOS",
+        titleRoom:"Quarto Cabrais",
         title:"QUARTO | AR CONDICIONADO | INSONORIZAÇÃO | WI-FI GRATUITO | ÁREA 46m²",
-        comodatiesBold:"COMODIDADES:",
-        comodaties:" Suite situada no piso térreo acessível a cadeira de rodas | Área de estar | Área de trabalho | Roupa de Cama | Tomada perto da cama | Suporte para cabides | Cama extra (suplemento)",
-        textBold:"POSSIBILIDADE DE UTILIZAR:",
-        text:" Cozinha comum totalmente equipada | 2 Salas comum com lareira | Sala comum de TV | Terraço | Quintal",
+        textRoom:"Quarto “Cabrais” é um espaço requintado e repleto de história, com mobiliário luxuoso em madeira trabalhada, que imita o estilo antigo e exala elegante. Cada peça foi cuidadosamente escolhida para evocar a nobreza e o estilo clássico. A cama de casal é ampla e confortável, decorada com roupa de cama sofisticada e suave ao toque, convidando ao descanso.",
+        textRoom2:"O quarto conta com uma varanda espaçosa, oferecendo uma vista impressionante da vila e da icônica estátua de Pedro Álvares Cabral, uma homenagem ao ilustre explorador português. É o local perfeito para observar a vila histórica de Belmonte e para desfrutar de momentos de contemplação, especialmente ao amanhecer e ao entardecer.",
+        textRoom3:"Os tons neutros e os acabamentos em madeira harmonizam-se com as cortinas pesadas e elegantes, criando um ambiente acolhedor e com um toque de opulência.",
+        textBottom1:"WC | Duche | Produtos de higiene pessoal gratuitos | Toalhas | Secador de cabelo",
+        textBold1:"CASA DE BANHO:",
+        textBottom2:" Cozinha comum totalmente equipada | 2 Salas comum com lareira | Sala comum de TV | Terraço | Quintal",
+        textBold2:"POSSIBILIDADE DE UTILIZAR:",
 
         contact_us: "Contacte-nos",
         follow_us: "Visite-nos",
@@ -31,12 +29,6 @@ const translations = {
     en: {
         home: "HOME",
         belmonte: "BELMONTE",
-        rooms: "ROOMS",
-        room1:"ROOM",
-        room2:"ROOM",
-        room3:"ROOM",
-        room4:"ROOM",
-        room5:"ROOM",
         kitchen: "KITCHEN",
         gallery: "GALLERY",
         testimonials: "TESTIMONIALS",
@@ -44,12 +36,16 @@ const translations = {
         location: "LOCATION",
         reserve: "RESERVATIONS",
 
-        titleRoom:"Bedroom",
+        rooms:"ROOMS",
+        titleRoom:"Room Cabrais",
         title:"ROOM | AIR CONDITIONING | SOUNDPROOFING | FREE WI-FI | AREA 46m²",
-        comodatiesBold:"FACILITIES:",
-        comodaties:" Ground floor suite, wheelchair accessible | Living area | Work area | Bed linen | Socket near the bed | Clothes rack | Extra bed (supplement)",
-        textBold:"POSSIBILITY OF USE:",
-        text:" Fully equipped common kitchen | 2 common rooms with fireplace | Common TV room | Terrace | Backyard",
+        textRoom:"Room “Cabrais” is a refined and historical space, with luxurious handcrafted wooden furniture that mimics an antique style and exudes elegance. Each piece was carefully selected to evoke nobility and classical style. The double bed is spacious and comfortable, adorned with sophisticated and soft-touch bedding, inviting relaxation.",
+        textRoom2:"The room features a spacious balcony, offering an impressive view of the village and the iconic statue of Pedro Álvares Cabral, a tribute to the illustrious Portuguese explorer. It is the perfect spot to observe the historic village of Belmonte and enjoy contemplative moments, especially at sunrise and sunset.",
+        textRoom3:"Neutral tones and wooden finishes harmonize with the heavy and elegant curtains, creating a cozy atmosphere with a touch of opulence.",
+        textBottom1:"WC | Shower | Free toiletries | Towels | Hairdryer",
+        textBold1:"BATHROOM:",
+        textBottom2:" Fully equipped shared kitchen | 2 Shared lounges with fireplace | Shared TV room | Terrace | Backyard",
+        textBold2:"USAGE POSSIBILITIES:",
 
         contact_us: "Contact us",
         follow_us: "Visit us",
@@ -60,12 +56,6 @@ const translations = {
     es: {
         home: "CASA",
         belmonte: "BELMONTE",
-        rooms: "HABITACIONES",
-        room1:"HABITACIONE",
-        room2:"HABITACIONE",
-        room3:"HABITACIONE",
-        room4:"HABITACIONE",
-        room5:"HABITACIONE",
         kitchen: "COCINA",
         gallery: "GALERÍA",
         testimonials: "TESTIMONIOS",
@@ -73,12 +63,16 @@ const translations = {
         location: "UBICACIÓN",
         reserve: "RESERVAS",
 
-        titleRoom:"Habitación",
-        title:"HABITACIÓN | AIRE ACONDICIONADO | INSONORIZACIÓN | WI-FI GRATIS | ÁREA 46m²",
-        comodatiesBold:"FACILITIES:",
-        comodaties:" Suite ubicada en planta baja accesible a sillas de ruedas | Sala de estar | Escritorio | Ropa de cama | Enchufe cerca de la cama | Soporte para perchas | Cama supletoria (suplemento)",
-        textBold:"POSIBILIDAD DE USO:",
-        text:" Cocina común totalmente equipada | 2 salas comunes con chimenea | Sala de televisión común | Terraza | Patio",
+        rooms:"HABITACIONES",
+        titleRoom:"Habitación Cabrais",
+        title:"HABITACIÓN | AIRE ACONDICIONADO | INSONORIZACIÓN | WI-FI GRATUITO | ÁREA 46m²",
+        textRoom:"La habitación “Cabrais” es un espacio refinado y lleno de historia, con muebles lujosos de madera trabajada que imitan un estilo antiguo y destilan elegancia. Cada pieza fue cuidadosamente seleccionada para evocar nobleza y estilo clásico. La cama doble es amplia y cómoda, adornada con ropa de cama sofisticada y suave al tacto, invitando al descanso.",
+        textRoom2:"La habitación cuenta con un balcón espacioso, ofreciendo una vista impresionante del pueblo y la icónica estatua de Pedro Álvares Cabral, un homenaje al ilustre explorador portugués. Es el lugar perfecto para observar el pueblo histórico de Belmonte y disfrutar de momentos de contemplación, especialmente al amanecer y al atardecer.",
+        textRoom3:"Los tonos neutros y los acabados en madera se armonizan con las cortinas pesadas y elegantes, creando un ambiente acogedor con un toque de opulencia.",
+        textBottom1:"WC | Ducha | Artículos de tocador gratuitos | Toallas | Secador de pelo",
+        textBold1:"BAÑO:",
+        textBottom2:" Cocina compartida totalmente equipada | 2 Salas comunes con chimenea | Sala común de TV | Terraza | Patio trasero",
+        textBold2:"POSIBILIDAD DE USO:",
 
        
         contact_us: "Contáctenos",
@@ -90,12 +84,6 @@ const translations = {
     fr: {
         home: "MAISON",
         belmonte: "BELMONTE",
-        rooms: "CHAMBRE",
-        room1:"CHAMBRE",
-        room2:"CHAMBRE",
-        room3:"CHAMBRE",
-        room4:"CHAMBRE",
-        room5:"CHAMBRE",
         kitchen: "CUISINE",
         gallery: "GALERIE",
         testimonials: "TÉMOIGNAGES",
@@ -104,12 +92,16 @@ const translations = {
         reserve: "RÉSERVATIONS",
         contact_us: "Contactez-nous",
 
-        titleRoom:"Chambre",
-        title:"CHAMBRE | CLIMATISATION | INSONORISATION | CONNEXION WI-FI GRATUITE | SUPERFICIE 46m²",
-        comodatiesBold:"COMMODITÉS:",
-        comodaties:" Suite située au rez-de-chaussée accessible aux fauteuils roulants | Surface habitable | Bureau | Linge de lit | Prise près du lit | Support de suspension | Lit supplémentaire (supplément)",
-        textBold:"POSSIBILITÉ D'UTILISATION:",
-        text:" Cuisine commune entièrement équipée | 2 salles communes avec foyer | Salle de télévision commune | Terrasse | Cour",
+        rooms:"CHAMBRES",
+        titleRoom:"Chambre Cabrais",
+        title:"CHAMBRE | CLIMATISATION | INSONORISATION | WI-FI GRATUIT | SUPERFICIE 46m²",
+        textRoom:"La chambre “Cabrais” est un espace raffiné et chargé d’histoire, avec des meubles luxueux en bois travaillé qui imitent un style ancien et dégagent de l’élégance. Chaque pièce a été soigneusement sélectionnée pour évoquer la noblesse et le style classique. Le lit double est spacieux et confortable, paré de literie sophistiquée et douce au toucher, invitant à la détente.",
+        textRoom2:"La chambre dispose d’un balcon spacieux, offrant une vue impressionnante sur le village et la statue emblématique de Pedro Álvares Cabral, un hommage à l’illustre explorateur portugais. C’est l’endroit parfait pour observer le village historique de Belmonte et profiter de moments de contemplation, notamment au lever et au coucher du soleil.",
+        textRoom3:"Les tons neutres et les finitions en bois s’harmonisent avec les rideaux lourds et élégants, créant une atmosphère chaleureuse avec une touche d’opulence.",
+        textBottom1:"WC | Douche | Articles de toilette gratuits | Serviettes | Sèche-cheveux",
+        textBold1:"SALLE DE BAIN:",
+        textBottom2:" Cuisine commune entièrement équipée | 2 Salles communes avec cheminée | Salle commune de TV | Terrasse | Cour",
+        textBold2:"POSSIBILITÉS D’UTILISATION:",
 
         follow_us: "Suivez-nous",
         book: "Livre des Réclamations",
@@ -122,11 +114,6 @@ const translations = {
 function setLanguage(lang) {
     document.getElementById('home').textContent = translations[lang].home;
     document.querySelector('a[href="../Belmonte/index.belmonte.html"]').textContent = translations[lang].belmonte;
-    document.querySelector('a[href="../Quartos1/index.quartos1.html"]').textContent = translations[lang].room1 + " 1";
-    document.querySelector('a[href="../Quartos2/index.quartos2.html"]').textContent = translations[lang].room2 + " 2";
-    document.querySelector('a[href="../Quartos3/index.quartos3.html"]').textContent = translations[lang].room3 + " 3";
-    document.querySelector('a[href="./index.quartos4.html"]').textContent = translations[lang].room4 + " 4";
-    document.querySelector('a[href="../Quartos5/index.quartos5.html"]').textContent = translations[lang].room5 + " 5";
     document.querySelector('a[href="../Cozinha/index.cozinha.html"]').textContent = translations[lang].kitchen;
     document.querySelector('a[href="../Galeria/index.galeria.html"]').textContent = translations[lang].gallery;
     document.querySelector('a[href="../Testemunhos/index.testemunhos.html"]').textContent = translations[lang].testimonials;
@@ -136,10 +123,13 @@ function setLanguage(lang) {
 
     // Atualizar o texto da seção principal
     document.getElementById('rooms').textContent = translations[lang].rooms;
-    document.getElementById('titleRoom').textContent = translations[lang].titleRoom + " 4";
-    document.getElementById('title').textContent = translations[lang].title ;
-    document.getElementById('comodaties').innerHTML = '<strong>' + translations[lang].comodatiesBold + '</strong> ' + translations[lang].comodaties;
-    document.getElementById('text').innerHTML = '<strong>' + translations[lang].textBold + '</strong> ' + translations[lang].text;
+    document.getElementById('titleRoom').textContent = translations[lang].titleRoom;
+    document.getElementById('title').textContent = translations[lang].title;
+    document.getElementById('textRoom').textContent = translations[lang].textRoom;
+    document.getElementById('textRoom2').textContent = translations[lang].textRoom2;
+    document.getElementById('textRoom3').textContent = translations[lang].textRoom3;
+    document.getElementById('textBottom1').innerHTML = '<strong>' + translations[lang].textBold1 + '</strong> ' + translations[lang].textBottom1;
+    document.getElementById('textBottom2').innerHTML = '<strong>' + translations[lang].textBold2 + '</strong> ' + translations[lang].textBottom2;
 
 
 

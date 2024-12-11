@@ -12,7 +12,12 @@ function loadCalendarAPI() {
   gapi.client.setApiKey(API_KEY);
   gapi.client.load('calendar', 'v3', listYearEvents);
 }
-
+function initGoogleAPI() {
+  gapi.load("client", loadGoogleCalendarAPI);
+}
+window.onload = function() {
+  initGoogleAPI();
+};
 function listYearEvents() {
   gapi.client.calendar.events.list({
     calendarId: CALENDAR_ID,
@@ -160,7 +165,9 @@ document.getElementById('bookNowBtn').addEventListener('click', () => {
           
           localStorage.setItem('totalRooms', totalRooms);
           localStorage.setItem('totalGuests', totalGuests);
-          
+          //---
+          localStorage.setItem('checkinDate', checkInDate.toISOString().split('T')[0]);
+          localStorage.setItem('checkoutDate', checkOutDate.toISOString().split('T')[0]);
           window.location.href = "../Escolher-quartos/escolha.html";
       }
   });
@@ -180,3 +187,36 @@ document.getElementById('bookNowBtn').addEventListener('click', () => {
           bookNowBtn.disabled = true;
       }
   }
+
+//----teste
+  function createEvent() {
+    if (!checkInDate || !checkOutDate) {
+      alert("Por favor, selecione as datas de check-in e check-out.");
+      return;
+    }
+  
+    // Detalhes do evento
+    const event = {
+      summary: 'Reserva', // Nome do evento
+      description: `Reserva de ${rooms.length} quarto(s) para ${rooms.reduce((sum, room) => sum + room.guests, 0)} hóspede(s).`,
+      start: {
+        date: checkInDate.toISOString().split('T')[0], // Data inicial no formato 'YYYY-MM-DD'
+      },
+      end: {
+        date: new Date(checkOutDate.getTime() + 24 * 60 * 60 * 1000).toISOString().split('T')[0], // A data final em eventos all-day não inclui a última data
+      },
+    };
+  
+    // Envio do evento
+    gapi.client.calendar.events.insert({
+      calendarId: CALENDAR_ID, // ID do seu calendário
+      resource: event,
+    }).then((response) => {
+      console.log("Evento criado:", response);
+      alert("Reserva criada com sucesso no Google Calendar!");
+    }).catch((error) => {
+      console.error("Erro ao criar evento:", error);
+      alert("Erro ao criar a reserva. Verifique as permissões.");
+    });
+  }
+  
