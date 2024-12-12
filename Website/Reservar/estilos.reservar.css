@@ -27,10 +27,6 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#guest-room-picker{
-    z-index: 10000;
-}
-
 .nav-item :hover {
     color: #f0ca8c;
 }
@@ -40,13 +36,15 @@ body {
     justify-content: center;
 }
 
+
+
 .home-button {
     background-color: #010101;
     color: white;
     border: none;
-    padding: 8px 16px; /* Reduzido para mobile */
+    padding: 8px 16px; 
     font-size: 14px;
-    border-radius: 6px; /* Reduzido para mobile */
+    border-radius: 6px; 
     text-align: center;
     cursor: pointer;
 }
@@ -145,26 +143,29 @@ body {
     }
 
 }
+
 /*------------------------------------------------------------------------------------------------------------------------------------*/
 
-/*Calendar*/
+/* Calendar Section Styling */
 
+/* Booking Bar Styling */
+.hero-image .booking-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Space between elements */
+    padding: 20px 40px; /* Padding for the booking bar */
+    background-color: #ffffff;
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    min-width: 52%; /* Minimum width */
+    position: absolute;
+    top: 10%; /* Place near the top of the image */
+    transform: translate(-50%, -10%);
+}
 
- /* Styling for the booking bar */
-
-  .booking-bar {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 30px; /* Aumenta o espaço entre os elementos */
-      padding: 20px 40px; /* Aumenta o preenchimento da barra */
-      background-color: #ffffff;
-      border-radius: 50px;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-      min-width: 52%; /* Aumenta a largura mínima da barra */
-      }
-
-  .input-section {
+/* Input Section Styling */
+.hero-image .booking-bar .input-section {
     position: relative;
     display: flex;
     align-items: center;
@@ -177,25 +178,25 @@ body {
     cursor: pointer;
     min-width: 180px;
     transition: background-color 0.3s ease;
-  }
-  .input-section:hover {
+}
+.hero-image .booking-bar .input-section:hover {
     background-color: #e8e8e8;
-  }
-  .input-section span,
-  .input-section input {
+}
+.hero-image .booking-bar .input-section span,
+.hero-image .booking-bar .input-section input {
     font-size: 14px;
     color: #555;
-  }
-  .input-section input {
+}
+.hero-image .booking-bar .input-section input {
     border: none;
     background: transparent;
     outline: none;
     text-align: center;
     width: 100%;
-  }
+}
 
-  /* Dropdown styling */
-  .dropdown {
+/* Dropdown Styling */
+.hero-image .booking-bar .dropdown {
     display: none;
     position: absolute;
     top: calc(100% + 10px);
@@ -207,16 +208,16 @@ body {
     width: 250px;
     padding: 15px;
     z-index: 1000;
-  }
-  .dropdown.show {
+}
+.hero-image .booking-bar .dropdown.show {
     display: block;
-  }
+}
 
-  /* Room Item */
-  .room-item {
+/* Room Item Styling */
+.hero-image .booking-bar .room-item {
     margin-bottom: 15px;
-  }
-  .room-title {
+}
+.hero-image .booking-bar .room-title {
     font-weight: bold;
     display: flex;
     justify-content: space-between;
@@ -224,14 +225,14 @@ body {
     margin-bottom: 5px;
     font-size: 14px;
     color: #333;
-  }
-  .guest-counter {
+}
+.hero-image .booking-bar .guest-counter {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-  }
-  .counter-button {
+}
+.hero-image .booking-bar .counter-button {
     background-color: #f0f0f0;
     border: none;
     padding: 5px 8px;
@@ -240,13 +241,13 @@ body {
     font-size: 16px;
     color: #555;
     transition: background-color 0.3s ease;
-  }
-  .counter-button:hover {
+}
+.hero-image .booking-bar .counter-button:hover {
     background-color: #ddd;
-  }
+}
 
-  /* Add room button */
-  .add-room-btn {
+/* Add Room Button Styling */
+.hero-image .booking-bar .add-room-btn {
     display: block;
     padding: 8px 15px;
     border: 1px solid #ddd;
@@ -257,14 +258,13 @@ body {
     font-size: 14px;
     color: #777;
     transition: background-color 0.3s ease;
-    z-index: 10000000;
-  }
-  .add-room-btn:hover {
+}
+.hero-image .booking-bar .add-room-btn:hover {
     background-color: #e8e8e8;
-  }
+}
 
-  /* Booking Button */
-  button {
+/* Booking Button Styling */
+.hero-image .booking-bar button {
     padding: 12px 30px;
     font-size: 16px;
     color: #ffffff;
@@ -273,14 +273,52 @@ body {
     border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  button:hover {
+}
+.hero-image .booking-bar button:hover {
     background-color: #6a4f38;
-  }
-  button:disabled {
+}
+.hero-image .booking-bar button:disabled {
     background-color: #ddd;
     cursor: not-allowed;
-  }
+}
+
+/* Responsive Design for Calendar Section */
+@media (max-width: 600px) {
+    .hero-image .booking-bar {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        min-width: 100%;
+        top: 20%; /* Adjust top position for mobile */
+        transform: translate(-50%, -20%);
+    }
+    .hero-image .booking-bar .input-section {
+        min-width: 100%;
+    }
+    .hero-image .booking-bar .dropdown {
+        width: 100%;
+    }
+    .hero-image .booking-bar .room-item {
+        margin-bottom: 10px;
+    }
+    .hero-image .booking-bar .room-title {
+        font-size: 12px;
+    }
+    .hero-image .booking-bar .counter-button {
+        padding: 3px 5px;
+        font-size: 12px;
+    }
+    .hero-image .booking-bar .add-room-btn {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+    .hero-image .booking-bar button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+    
+
 
 
 /*------------------------------------------------------------------------------------------------------------------------------------*/
@@ -369,9 +407,7 @@ footer {
     height: auto;
 }
 
-#footer {
-    padding-top: 5%;
-}
+
 
 .footer-bottom {
     background-color: #f9f9f9;
@@ -400,10 +436,10 @@ footer {
         flex-direction: column;
         text-align: center;
     }
-
     .logo1 {
         display: none; /* Oculta o logo no mobile */
     }
+
     .contact li {
         justify-content: center; /* Centraliza os ícones e o texto dos contactos */
     }
@@ -422,6 +458,7 @@ footer {
         margin-bottom: 30px; /* Aumenta o espaço entre os ícones sociais e o "Livro de Reclamações" */
     }
 }
+
 
 
 
@@ -467,5 +504,12 @@ footer {
 @media (max-width: 600px) {
     .language-selector {
         padding-top: 5px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        display: none !important;
     }
 }
