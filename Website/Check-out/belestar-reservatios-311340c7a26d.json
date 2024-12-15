@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "belestar-reservatios",
+  "private_key_id": "311340c7a26d2715ce8ebfe02e27348756a1db26",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDTx+Uyb6SN0LEX\nFXUCekKif5uBqrEQ0RM7TW547Jehbnc4ySuMoqgH2X3oNd4mkeRQBpl/7l1+lSUl\nrOTBVurAd9HkAhHmApvT2CpGftwRDEfHtcMP8/k4NCE7WgsxhpB/9Xw8+VUIYcfS\nNreGElZXUxP71YSTUYvw9z9v+KC8Px527NpkvsMbWyM3Va/Fk5US3xJ0vgWwYi30\nlVASKJjlvPGxFU+hfsDb54Tgokbjo1ipJupvCDgfzfAr4Vi3Y8LgQzKIegMkAZzY\nagVjO8s//MdYNFY1z2CsGMQfhuIhVVKkL9N0o64HFSft0WgueuQRTxID+1mLIQLD\nhRV5jUHBAgMBAAECggEAE5c9wgUm3UGNaDvBZ7nEmUChs4SFPa+Bjm5SxlfojPPp\njnS5lRhk39kENytogfvj+W0q3PVBa9jDJ3GPdb0jGSvcXDG+0x6xqI6qFnxcwiz3\nJOfRBBRHHSZhXpqtR2cRzex5EjDkZ1KYR/9sybe/ifNy+Uxep7wW7HMKyMJgqBkp\nk/I2Zy6KD7jaqkF/3cMBlhlmIh1hxwWnzoGHJ1q3XJiai+FeZJ2x2fQ080oZj1UQ\nu1IvkWOz5HrPe+bCyxtJiQayjy6Nd9iirimD/aPE3GPWRbDGnjLHrsHA2s08wwfQ\nlyMNcdH16VaZB7A7J+UdNtVXOlsValQdLAGYKU6dGwKBgQDs4ZUsxC698trqsYPL\n+jFHm6bl1oGxAbjF9WtkQCLRmTQ6xox2g6dk1eaULCajuH/Choi5d5hGB2mMw6K9\nKv4mUBM8EKep+gPTj5xhmcoubPsBTv7sN1Aj4iwrOGlvtVG7dg/9uESWvwjRNlFK\nNVr0rw9WotIgwJwtEmNbu079BwKBgQDk37EOwNjvgYS+a1YzzaCdWreKqBhQ3WN2\n+v2DUGRLSWkk2rP+C2fRmQOKjvvChlf3UzQPE4yFdYkwxLCXNGSSLu3fzB9tT3wA\nRbD7gasat3zhBIph6KYiJGBxGgli9KK3l15ejlkl9rgPQcg/PhdAvGaeyJ/o8aQK\nUpMeWkfg9wKBgGdueHx7jQ1TpVMk/69pJ2tlA5MH/skTP2LwrluvxYRPqQag+2Qk\nSEs3Ot8oCBck0GRX6gtRtSOeyO+13LFMvHxuKnfnrc4CZPlTk6zqQeXToCYKIDV0\nUYHZl/+nOiKUwYNhIcpfU1OfRnJTjVshwP1mEwR5Q9cZQxhLFydOukaxAoGAFGX/\ncNItQ4NmolYMs8dC5mNccmYy7JoesE8EYzy6A5/CWD+JxT2c/ihGEYZW1+qDUo6+\n2A0k/AwSsx8EoiVQRVsbZlPaBTMNWTTc5j2TU2lBHwj5kGpczDQzyEDKz2AAVJ6Q\nEZtcRK7tjqaNQ120Ute3ybUV03wd47GiXRUszNcCgYEAnXy+iHJiDb1+dkF/6zba\nMFZ9qE7frYmcI/OAIuXaLF4VnTuwSHD6pXKWUwuxbKvXFvVtm1vTM2qRriqiiuJD\n1/tnPh1NCHb3IQNFxapdsgHyQFZdXNzRjnU7Ls014i/yg0t64g/8dqjML7DoBa2j\nOXp0EcGdNNmiIjsvBU0yS6s=\n-----END PRIVATE KEY-----\n",
+  "client_email": "reservas-app@belestar-reservatios.iam.gserviceaccount.com",
+  "client_id": "113807226051201807641",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/reservas-app%40belestar-reservatios.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

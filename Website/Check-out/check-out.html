@@ -130,9 +130,14 @@
             z-index: 999; /* Fica abaixo da mensagem de sucesso */
         }
 
-
-        
-
+        @media (max-width: 768px) {
+            .progress {
+                display: none;
+            }
+            .logo{
+                height: 55px;
+            }
+        }
 
     </style>
 </head>
@@ -151,7 +156,7 @@
             </div>
             <div class="dotted-line"></div>
             <div class="step">
-                <div class="step-circle active">2</div>
+                <div class="step-circle active">✔</div>
                 <div class="step-label active">Detalhes dos quartos</div>
             </div>
             <div class="dotted-line"></div>
@@ -192,12 +197,20 @@
               <option value="inglaterra">Inglaterra</option>
             </select>
           </div>
+
+          <!-- Declaração de leitura dos Termos e Condições -->
+          <div class="form-group">
+            <label>
+              <input type="checkbox" id="agreeTerms" required>
+              Declaro que li os <a href="../TermosCondicoes/index.termos.html" target="_blank">Termos e Condições</a>.
+            </label>
+          </div>
+
           <button type="submit" class="submit-button">Confirmar Reserva</button>
         </form>
       </div>
     
       <!-- Reservation Summary -->
-      <!-- Existing Reservation Summary section -->
         <div class="reservation-summary">
             <h2 class="summary-title">Resumo da Reserva</h2>
             <div class="summary-details">
@@ -224,9 +237,7 @@
             </div>
             </div>
         </div>
-  
     </div>
-
 
     <div id="bookedMessage">Reserva confirmada! Você será contactado em breve.</div>
 
@@ -286,9 +297,7 @@
     <a href="#" id="polites2">Política de Privacidade</a>
 </div>
 
-
 <script src="check-out.js"></script> 
     
 </body>
 </html>
-

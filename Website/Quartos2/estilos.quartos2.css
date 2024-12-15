@@ -331,7 +331,7 @@ h4{
     width: 80%; /* Definir uma largura menor, ajustável */
     max-width: 2000px; /* Limitar a largura máxima da imagem */
     margin: 0 auto 10px auto; /* Centralizar a imagem com margens automáticas */
-    height: 400px;
+    height: 700px;
     overflow: hidden;
     background-color: #fafafa; /* Cor de fundo atrás das imagens */
     border-radius: 10px; /* Bordas arredondadas (opcional) */
@@ -362,9 +362,6 @@ h4{
     opacity: 1;
 }
 
-#img4:checked ~ .main-image #image4 {
-    opacity: 1;
-}
 
 /* Esconder os radio buttons */
 input[type="radio"] {
@@ -383,7 +380,7 @@ input[type="radio"] {
 }
 
 .thumbnail-gallery img {
-    width: 100px;
+    width: 150px;
     height: auto;
     border-radius: 5px;
     transition: transform 0.3s ease, opacity 0.3s ease;

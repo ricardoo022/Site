@@ -228,6 +228,31 @@ input[type="text"], input[type="email"], input[type="tel"] {
   text-align: center;
 }
 
+/*Mobile*/
+
+@media (max-width: 768px) {
+  .checkout-container {
+    flex-direction: column;
+  }
+
+  .checkout-form, .reservation-summary {
+    width: 100%;
+  }
+
+  .room-container {
+    flex-direction: column;
+  }
+
+  .carousel {
+    width: 100%;
+    height: 200px;
+  }
+
+  .room-details {
+    width: 100%;
+  }
+}
+
 /* Rodapé */
 footer {
   background-color: #f9f9f9;

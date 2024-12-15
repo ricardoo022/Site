@@ -12,12 +12,7 @@ function loadCalendarAPI() {
   gapi.client.setApiKey(API_KEY);
   gapi.client.load('calendar', 'v3', listYearEvents);
 }
-function initGoogleAPI() {
-  gapi.load("client", loadGoogleCalendarAPI);
-}
-window.onload = function() {
-  initGoogleAPI();
-};
+
 function listYearEvents() {
   gapi.client.calendar.events.list({
     calendarId: CALENDAR_ID,
@@ -43,6 +38,9 @@ function listYearEvents() {
 function initializeCalendar(unavailableDates) {
   const formattedDates = unavailableDates.map(date => new Date(date).toISOString().split('T')[0]);
 
+  // Detect screen width to adjust the number of months shown in the calendar
+  const showMonths = window.innerWidth <= 768 ? 1 : 2; // 1 month for mobile, 2 months for desktop
+
   flatpickr("#calendarInput", {
     inline: false,
     minDate: "today", // Definir o calendário para começar a partir de hoje
@@ -51,21 +49,43 @@ function initializeCalendar(unavailableDates) {
     locale: "pt",
     dateFormat: "Y-m-d",
     mode: "range",
-    showMonths: 2,
+    showMonths: showMonths,  // Adjust number of months based on screen width
     onChange: function(selectedDates) {
       if (selectedDates.length === 1) {
+        // Primeiro clique (Check-in)
         document.getElementById("calendarInput").placeholder = "Check-in / Check-out";
         checkInDate = selectedDates[0];
         checkOutDate = null;
       } else if (selectedDates.length === 2) {
+        // Segundo clique (Check-out)
         checkInDate = selectedDates[0];
         checkOutDate = selectedDates[1];
-        document.getElementById("calendarInput").value = `${checkInDate.toISOString().split('T')[0]} to ${checkOutDate.toISOString().split('T')[0]}`;
+
+        // Verificar se o intervalo inclui dias indisponíveis
+        const checkInISO = checkInDate.toISOString().split('T')[0];
+        const checkOutISO = checkOutDate.toISOString().split('T')[0];
+        const isInvalid = formattedDates.some(unavailableDate =>
+          new Date(unavailableDate) >= new Date(checkInISO) &&
+          new Date(unavailableDate) <= new Date(checkOutISO)
+        );
+
+        if (isInvalid) {
+          alert("Selecione um intervalo válido sem incluir datas indisponíveis.");
+          checkInDate = null;
+          checkOutDate = null;
+          document.getElementById("calendarInput").value = "";
+          return;
+        }
+
+        document.getElementById("calendarInput").value = `${checkInISO} to ${checkOutISO}`;
       }
+
       validateBooking();
     }
   });
 }
+
+
 
 function init() {
   gapi.load('client', loadCalendarAPI);
@@ -108,48 +128,62 @@ function renderRooms() {
     roomItem.innerHTML = `
       <div class="room-title">
         Room ${index + 1}
-        <button onclick="removeRoom(${index})" style="color: #7a5c3f; border: none; background: none; cursor: pointer;">Remove</button>
+        <button onclick="removeRoom(${index}, event)" style="color: #7a5c3f; border: none; background: none; cursor: pointer;">Remove</button>
       </div>
       <div class="guest-counter">
         Guests:
-        <button class="counter-button" onclick="updateGuests(${index}, -1)">-</button>
+        <button class="counter-button" onclick="updateGuests(${index}, -1, event)">-</button>
         <span>${room.guests}</span>
-        <button class="counter-button" onclick="updateGuests(${index}, 1)">+</button>
+        <button class="counter-button" onclick="updateGuests(${index}, 1, event)">+</button>
       </div>
     `;
     roomContainer.appendChild(roomItem);
   });
 }
 
-function validateBooking() {
-  const bookNowBtn = document.getElementById('bookNowBtn');
-  if (checkInDate && checkOutDate && rooms.length > 0) {
-      const dayDifference = Math.ceil((checkOutDate - checkInDate) / (1000 * 60 * 60 * 24));
-      localStorage.setItem('totalDays', dayDifference);  // Store the number of days
-      bookNowBtn.disabled = false;
-  } else {
-      bookNowBtn.disabled = true;
+function addRoom(event) {
+  if (event) event.stopPropagation(); // Prevent popup from closing
+  rooms.push({ guests: 1 });
+  renderRooms();
+  updateRoomGuestText();
+}
+
+function removeRoom(index, event) {
+  if (event) event.stopPropagation(); // Prevent popup from closing
+  if (rooms.length > 1) {
+    rooms.splice(index, 1);
+    renderRooms();
+    updateRoomGuestText();
   }
 }
 
+function updateGuests(index, change, event) {
+  if (event) event.stopPropagation(); // Prevent popup from closing
+  rooms[index].guests = Math.max(1, rooms[index].guests + change);
+  renderRooms();
+  updateRoomGuestText();
+}
+
+// Event listener for the popup toggle
 document.getElementById('guest-room-picker').addEventListener('click', (event) => {
   event.stopPropagation();
   const dropdown = document.getElementById("guestRoomDropdown");
   dropdown.classList.toggle("show");
 });
-href = ""
-document.getElementById('bookNowBtn').addEventListener('click', () => {
-  if (!document.getElementById('bookNowBtn').disabled) {
-    window.location.href = "../Escolher-quartos/escolha.html";    
-  }
+
+// Prevent closing when interacting inside the popup
+document.getElementById("guestRoomDropdown").addEventListener('click', (event) => {
+  event.stopPropagation();
 });
 
+// Global click listener to close the popup
 window.onclick = function(event) {
   const dropdown = document.getElementById("guestRoomDropdown");
   if (!event.target.closest('#guest-room-picker') && dropdown.classList.contains("show")) {
     dropdown.classList.remove("show");
   }
 };
+
 
 window.onload = function() {
   init();
@@ -165,9 +199,7 @@ document.getElementById('bookNowBtn').addEventListener('click', () => {
           
           localStorage.setItem('totalRooms', totalRooms);
           localStorage.setItem('totalGuests', totalGuests);
-          //---
-          localStorage.setItem('checkinDate', checkInDate.toISOString().split('T')[0]);
-          localStorage.setItem('checkoutDate', checkOutDate.toISOString().split('T')[0]);
+          
           window.location.href = "../Escolher-quartos/escolha.html";
       }
   });
@@ -188,35 +220,4 @@ document.getElementById('bookNowBtn').addEventListener('click', () => {
       }
   }
 
-//----teste
-  function createEvent() {
-    if (!checkInDate || !checkOutDate) {
-      alert("Por favor, selecione as datas de check-in e check-out.");
-      return;
-    }
-  
-    // Detalhes do evento
-    const event = {
-      summary: 'Reserva', // Nome do evento
-      description: `Reserva de ${rooms.length} quarto(s) para ${rooms.reduce((sum, room) => sum + room.guests, 0)} hóspede(s).`,
-      start: {
-        date: checkInDate.toISOString().split('T')[0], // Data inicial no formato 'YYYY-MM-DD'
-      },
-      end: {
-        date: new Date(checkOutDate.getTime() + 24 * 60 * 60 * 1000).toISOString().split('T')[0], // A data final em eventos all-day não inclui a última data
-      },
-    };
-  
-    // Envio do evento
-    gapi.client.calendar.events.insert({
-      calendarId: CALENDAR_ID, // ID do seu calendário
-      resource: event,
-    }).then((response) => {
-      console.log("Evento criado:", response);
-      alert("Reserva criada com sucesso no Google Calendar!");
-    }).catch((error) => {
-      console.error("Erro ao criar evento:", error);
-      alert("Erro ao criar a reserva. Verifique as permissões.");
-    });
-  }
   

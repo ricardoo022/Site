@@ -92,6 +92,15 @@
             border-bottom: 3px dotted black;
             margin: 0 0px;
         }
+        /*Estilos telemovel*/
+        @media (max-width: 768px) {
+            .progress {
+                display: none;
+            }
+            .logo{
+                height: 55px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -119,6 +128,15 @@
             </div>
         </div>
     </header>
+    
+        <div class="language-selector">
+            <a href="#" onclick="changeLanguage('pt')">PT</a>
+            <a href="#" onclick="changeLanguage('en')">EN</a>
+            <a href="#" onclick="changeLanguage('es')">ES</a>
+            <a href="#" onclick="changeLanguage('fr')">FR</a>
+        </div>
+
+    
 
     
 
@@ -131,7 +149,7 @@
   <div class="total-amount">Total: €<span id="totalAmount">0</span></div>
   <button id="continueButton" class="continue-button disabled" onclick="continueToCheckout()" disabled>Continuar</button>
 </div>
-
+<div id="overlay"></div>
 <div id="rooms">
   <template id="room-template">
     <div class="room-container">
@@ -153,7 +171,7 @@
           <img src="https://via.placeholder.com/32?text=📶" alt="WiFi">
         </div>
         <div class="room-price">
-          €<span class="price">251</span> per night
+          €<span class="price">251</span> ppor noite
         </div>
         <div class="room-total-price">Total: €<span class="total-price">0</span></div>
         <button class="continue-button" onclick="addToAccount(this)">Select</button>

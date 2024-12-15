@@ -34,7 +34,42 @@ updateReservationSummary();
 // Manipulador de envio do formulário de checkout
 document.getElementById("checkoutForm").addEventListener("submit", function(event) {
   event.preventDefault(); // Previne o comportamento padrão do formulário
-  
+
+  // Coletar dados do formulário
+  const name = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
+  const email = document.getElementById("email").value;
+  const taxNumber = document.getElementById("taxNumber").value;
+  const country = document.getElementById("country").value;
+  const extraInfo = document.getElementById("extraInfo").value;
+
+  // Adicionar dados do formulário aos dados da reserva
+  const fullReservationData = {
+    ...reservationData,
+    name,
+    phone,
+    email,
+    taxNumber,
+    country,
+    extraInfo
+  };
+
+  // Enviar email com os dados da reserva
+  fetch('http://localhost:3001/send-email', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(fullReservationData)
+  })
+  .then(response => response.text())
+  .then(result => {
+    console.log(result);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+
   // Exibe a mensagem de reserva confirmada
   const bookedMessage = document.getElementById('bookedMessage');
   bookedMessage.classList.add('active');

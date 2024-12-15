@@ -331,7 +331,7 @@ h4{
     width: 80%; /* Definir uma largura menor, ajustável */
     max-width: 2000px; /* Limitar a largura máxima da imagem */
     margin: 0 auto 10px auto; /* Centralizar a imagem com margens automáticas */
-    height: 400px;
+    height: 600px;
     overflow: hidden;
     background-color: #fafafa; /* Cor de fundo atrás das imagens */
     border-radius: 10px; /* Bordas arredondadas (opcional) */

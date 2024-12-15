@@ -13,37 +13,97 @@
     <link rel="stylesheet" href="./estilos.reservar.css">
     
     <style>
-       .hero-image {
-    width: 100%;
-    height: auto;
-    position: relative;
-    overflow: hidden;
-}
+    .hero-image {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
 
-.hero-img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
+    .hero-img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .hero-img-mobile {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
 
-.booking-bar {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.7); /* Light background for visibility */
-    padding-left: 15px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.2);
-    z-index: 10;
-}
+    .booking-bar {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.7); /* Light background for visibility */
+        padding-left: 15px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.2);
+        z-index: 10;
+    }
+
+    @media (max-width: 768px) {
+        .booking-bar {
+            top:40%;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            background-color: rgba(156, 124, 124, 0); 
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+        }
+    }
+    .hero-img-mobile {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        .hero-img {
+            display: none;
+        }
+        .hero-img-mobile {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        
+    }
+
+    #roomGuestText {
+        text-align: center;
+        width: 100%; /* Ensure the text spans the full width of its container */
+    }
+
+    .flatpickr-disabled {
+        pointer-events: none; /* Prevent clicking */
+    }
+    
+    .mobile-logo {
+        position: absolute; /* Garante que o logo se posicione no canto */
+        top: 0; /* Alinha ao topo */
+        left: 0; /* Encosta na borda esquerda */
+        padding: 10px 15px; /* Ajuste o espaçamento conforme necessário */
+        z-index: 1050; /* Mantém o logo acima de outros elementos */
+    }
+    .mobile-logo img {
+        max-height: 60px; /* Limita a altura do logo */
+        display: block; /* Remove espaços extras ao redor da imagem */
+    }
+
+
 
     </style>
 
     <body>  
+
+        <div class="mobile-logo d-block d-lg-none text-center py-3">
+            <a href="../main/index.main.html"><img src="../Fotos/Logotipo.png" alt="Logo" style="max-height: 55px;"></a>
+        </div>
+
+
         <!-- Header -->
         <header>
             <div class="language-selector">
@@ -58,6 +118,8 @@
 
         <!-- Header -->
         <section id="header">
+
+            
             <nav class="navbar navbar-expand-lg fixed-top">
                 <div class="container-fluid">
                     <a class="navbar-brand logo" href="../main/index.main.html">
@@ -98,8 +160,8 @@
 
         <!-- Hero Image Section -->
         <div class="hero-image">
-            <img src="../Fotos/foto2-belmonte.jpg" alt="Beautiful view of Casa" class="hero-img">
-            
+            <img src="../Fotos/reservation.jpg" alt="Beautiful view of Casa" class="hero-img">
+            <img src="../Fotos/another-image.png" alt="Beautiful view of Casa" class="hero-img-mobile ">
             <!-- Booking Bar - Now inside the hero image container -->
             <div class="booking-bar">
                 <!-- Date Picker Section -->
@@ -178,7 +240,8 @@
         
         <div class="footer-bottom">
             <p id="polites1">Concept by SalesUp © Copyright - Active Up. Todos os direitos reservados.</p>
-            <a href="#" id="polites2">Política de Privacidade</a>
+            <a href="../Politica/index.politica.html" id="polites2">Política de Privacidade</a>
+            <a href="../TermosCondicoes/index.termos.html" id="polites2">Termos e Condições</a>
         </div>
 
         
