@@ -11,92 +11,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="./estilos.reservar.css">
-    
-    <style>
-    .hero-image {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-
-    .hero-img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-    .hero-img-mobile {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-
-    .booking-bar {
-        position: absolute;
-        top: 15%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: rgba(255, 255, 255, 0.7); /* Light background for visibility */
-        padding-left: 15px;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        gap: 30px;
-        box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.2);
-        z-index: 10;
-    }
-
-    @media (max-width: 768px) {
-        .booking-bar {
-            top:40%;
-            flex-direction: column;
-            gap: 20px;
-            padding: 20px;
-            background-color: rgba(156, 124, 124, 0); 
-            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-        }
-    }
-    .hero-img-mobile {
-        display: none;
-    }
-
-    @media (max-width: 768px) {
-        .hero-img {
-            display: none;
-        }
-        .hero-img-mobile {
-            display: block;
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-        }
-        
-    }
-
-    #roomGuestText {
-        text-align: center;
-        width: 100%; /* Ensure the text spans the full width of its container */
-    }
-
-    .flatpickr-disabled {
-        pointer-events: none; /* Prevent clicking */
-    }
-    
-    .mobile-logo {
-        position: absolute; /* Garante que o logo se posicione no canto */
-        top: 0; /* Alinha ao topo */
-        left: 0; /* Encosta na borda esquerda */
-        padding: 10px 15px; /* Ajuste o espaçamento conforme necessário */
-        z-index: 1050; /* Mantém o logo acima de outros elementos */
-    }
-    .mobile-logo img {
-        max-height: 60px; /* Limita a altura do logo */
-        display: block; /* Remove espaços extras ao redor da imagem */
-    }
-
-
-
-    </style>
-
     <body>  
 
         <div class="mobile-logo d-block d-lg-none text-center py-3">
@@ -137,52 +51,65 @@
                             <li class="dropdown">
                                 <a class="nav-link dropdown-toggle nav-item " role="button" data-bs-toggle="dropdown" aria-expanded="false" id="rooms">QUARTOS</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item header-text" href="../Quartos1/index.quartos1.html" id="room1">QUARTO 1</a></li>
-                                    <li><a class="dropdown-item header-text" href="../Quartos2/index.quartos2.html" id="room2">QUARTO 2</a></li>
-                                    <li><a class="dropdown-item header-text" href="../Quartos3/index.quartos3.html" id="room3">QUARTO 3</a></li>
-                                    <li><a class="dropdown-item header-text" href="../Quartos4/index.quartos4.html" id="room4">QUARTO 4</a></li>
-                                    <li><a class="dropdown-item header-text" href="../Quartos5/index.quartos5.html" id="room5">QUARTO 5</a></li>
+                                    <li><a class="dropdown-item header-text" href="../Quartos1/index.quartos1.html" >SERRA DA ESTRELA</a></li>
+                                    <li><a class="dropdown-item header-text" href="../Quartos2/index.quartos2.html" >CASTELO</a></li>
+                                    <li><a class="dropdown-item header-text" href="../Quartos3/index.quartos3.html" >VALE DO ZÊZERE</a></li>
+                                    <li><a class="dropdown-item header-text" href="../Quartos4/index.quartos4.html" >CABRAIS</a></li>
+                                    <li><a class="dropdown-item header-text" href="../Quartos5/index.quartos5.html" >CENTUM CELLAS</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item"><a class="nav-link  header-text" href="../Cozinha/index.cozinha.html" id="kitchen">COZINHA</a></li>
                             <li class="nav-item"><a class="nav-link  header-text" href="../Galeria/index.galeria.html" id="gallery">GALERIA</a></li>
                             <li class="nav-item"><a class="nav-link  header-text" href="../Testemunhos/index.testemunhos.html" id="testimonials">TESTEMUNHOS</a></li>
                             <li class="nav-item"><a class="nav-link  header-text" href="../Contactos/index.contactos.html" id="contacts">CONTACTOS</a></li>
-                            <li class="nav-item"><a class="nav-link  header-text" href="./index.chegar.html" id="location">LOCALIZAÇÃO</a></li>
+                            <li class="nav-item"><a class="nav-link  header-text" href="../Como chegar/index.chegar.html" id="location">LOCALIZAÇÃO</a></li>
                         </ul>
                         <div class="nav-item">
-                            <a href="../Reservar/index.reservar.html" class="nav-link home-button header-text" id="reserve">RESERVAS</a>
+                            <a href="./index.reservar.html" class="nav-link home-button header-text" id="reserve">RESERVAS</a>
                         </div>
                     </div>
                 </div>
             </nav>            
         </section>
 
-        <!-- Hero Image Section -->
-        <div class="hero-image">
-            <img src="../Fotos/reservation.jpg" alt="Beautiful view of Casa" class="hero-img">
-            <img src="../Fotos/another-image.png" alt="Beautiful view of Casa" class="hero-img-mobile ">
-            <!-- Booking Bar - Now inside the hero image container -->
-            <div class="booking-bar">
-                <!-- Date Picker Section -->
-                <div class="input-section" id="date-picker">
-                    <input type="text" id="calendarInput" placeholder="Check-in / Check-out" readonly>
-                    <div id="calendar" class="calendar-container"></div>
-                </div>
-
-                <!-- Room and Guest Selection Section -->
-                <div class="input-section" id="guest-room-picker">
-                    <span id="roomGuestText">1 room, 2 guests</span>
-                    <div class="dropdown" id="guestRoomDropdown">
-                        <div id="roomContainer">
-                            <!-- Room items will be added here dynamically -->
-                        </div>
-                        <div class="add-room-btn" onclick="addRoom()">Add Room</div>
-                    </div>
-                </div>
-
-                <!-- Booking Button -->
-                <button id="bookNowBtn" disabled>BOOK NOW</button>
+        <!--choose the room/house-->
+        <div class="gallery">
+            <div class="gallery-item quarto">
+                <a href="../Check-out Casa/index.html">
+                    <img src="../Fotos/casa1.jpg" alt="Imagem da Casa">
+                    <div class="text">Casa</div>
+                </a>
+            </div>
+            <div class="gallery-item quarto">
+                <a href="../Check-out Serra/index.html">
+                    <img src="../Fotos/serra-da-estrela.jpg" alt="Quarto 1">
+                    <div class="text">Quarto Serra da Estrela</div>
+                </a>
+            </div>
+            <div class="gallery-item quarto">
+                <a href="../Check-out Castelo/index.html">
+                    <img src="../Fotos/castelo.jpg" alt="Quarto 2">
+                    <div class="text">Quarto Castelo</div>
+                </a>
+            </div>
+            <div class="gallery-item quarto">
+                <a href="../Check-out Vale/index.html">
+                    <img src="../Fotos/vale-do-zezere.jpg" alt="Quarto 3">
+                    <div class="text">Quarto Vale do Zêzere</div>
+                </a>
+            </div>
+            <div class="gallery-item quarto">
+                <a href="../Check-out Cabrais/index.html">
+                    <img src="../Fotos/cabrais.jpg" alt="Quarto 4">
+                    <div class="text">Quarto Cabrais</div>
+                </a>
+            </div>
+            <div class="gallery-item quarto">
+                <a href="../Check-out Centum/index.html">
+                    <img src="../Fotos/centrum-cellas.jpg" alt="Quarto 5">
+                    <div class="text">Quarto Centum Cellas</div>
+                </a>
+               
             </div>
         </div>
 
